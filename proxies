@@ -131,3 +131,18 @@ proxies:
       path: "/?ed=2048"
       headers:
         host: jp.juanshen.eu.org
+
+  - type: vless
+    name: jp-cdn-js-bang-top.juanshen.eu.org
+    server: jp-cdn-js-bang-top.juanshen.eu.org
+    port: 443
+    uuid: cc3af387-88ee-411f-8c4c-def01bb78458
+    network: ws
+    tls: true
+    udp: false
+    sni: cdn.jsbang.top
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        host: jp-cdn-js-bang-top.juanshen.eu.org
