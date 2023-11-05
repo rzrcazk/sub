@@ -116,3 +116,17 @@ proxies:
     disable-sni: true
     reduce-rtt: true
     sni: 1c33259e-singbox_tuic
+  - name: jp.juanshen.eu.org
+    server: jp.juanshen.eu.org
+    type: vless
+    port: 443
+    uuid: cc3af387-88ee-411f-8c4c-def01bb78458
+    network: ws
+    tls: true
+    udp: false
+    sni: jp.juanshen.eu.org
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        host: jp.juanshen.eu.org
