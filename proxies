@@ -116,7 +116,8 @@ proxies:
     disable-sni: true
     reduce-rtt: true
     sni: 1c33259e-singbox_tuic
-  - name: jp.juanshen.eu.org
+
+  - name: "cf-jp"
     server: jp.juanshen.eu.org
     type: vless
     port: 443
