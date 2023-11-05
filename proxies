@@ -1,0 +1,118 @@
+proxies:
+  - name: "1c33259e-VLESS_TCP/TLS_Vision"
+    type: vless
+    server: xsdl.juanshen9527.eu.org
+    port: 443
+    uuid: 1c33259e-a3ed-4b30-a108-9d8c49b6d147
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+  - name: "1c33259e-VLESS_WS"
+    type: vless
+    server: who.int
+    port: 443
+    uuid: 1c33259e-a3ed-4b30-a108-9d8c49b6d147
+    udp: true
+    tls: true
+    network: ws
+    client-fingerprint: chrome
+    servername: xsdl.juanshen9527.eu.org
+    ws-opts:
+      path: /uxcxws
+      headers:
+        Host: xsdl.juanshen9527.eu.org
+  - name: "1c33259e-vless_grpc"
+    type: vless
+    server: who.int
+    port: 443
+    uuid: 1c33259e-a3ed-4b30-a108-9d8c49b6d147
+    udp: true
+    tls: true
+    network: grpc
+    client-fingerprint: chrome
+    servername: xsdl.juanshen9527.eu.org
+    grpc-opts:
+      grpc-service-name: uxcxgrpc
+  - name: "1c33259e-VMess_WS"
+    type: vmess
+    server: who.int
+    port: 443
+    uuid: 1c33259e-a3ed-4b30-a108-9d8c49b6d147
+    alterId: 0
+    cipher: none
+    udp: true
+    tls: true
+    client-fingerprint: chrome
+    servername: xsdl.juanshen9527.eu.org
+    network: ws
+    ws-opts:
+      path: /uxcxvws
+      headers:
+        Host: xsdl.juanshen9527.eu.org
+  - name: "1c33259e-trojan_tcp"
+    type: trojan
+    server: xsdl.juanshen9527.eu.org
+    port: 443
+    password: 1c33259e-a3ed-4b30-a108-9d8c49b6d147
+    client-fingerprint: chrome
+    udp: true
+    sni: xsdl.juanshen9527.eu.org
+  - name: "1c33259e-Trojan_gRPC"
+    server: who.int
+    port: 443
+    type: trojan
+    password: 1c33259e-a3ed-4b30-a108-9d8c49b6d147
+    network: grpc
+    sni: xsdl.juanshen9527.eu.org
+    udp: true
+    grpc-opts:
+      grpc-service-name: uxcxtrojangrpc
+  - name: "1c33259e-singbox_hysteria2"
+    type: hysteria2
+    server: xsdl.juanshen9527.eu.org
+    port: 20334
+    password: 1c33259e-a3ed-4b30-a108-9d8c49b6d147
+    sni: xsdl.juanshen9527.eu.org
+  - name: "1c33259e-vless_reality_vision"
+    type: vless
+    server: 52.195.158.84
+    port: 443
+    uuid: 1c33259e-a3ed-4b30-a108-9d8c49b6d147
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    servername: www.nokia.com
+    reality-opts:
+      public-key: BpMcbqxxWhOV5i8Zu-mhgS9FZv-rYrS-t7ulvaqWOA4
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: "1c33259e-vless_reality_grpc"
+    type: vless
+    server: 52.195.158.84
+    port: 443
+    uuid: 1c33259e-a3ed-4b30-a108-9d8c49b6d147
+    network: grpc
+    tls: true
+    udp: true
+    servername: www.nokia.com
+    reality-opts:
+      public-key: BpMcbqxxWhOV5i8Zu-mhgS9FZv-rYrS-t7ulvaqWOA4
+      short-id: 6ba85179e30d4fc2
+    grpc-opts:
+      grpc-service-name: "grpc"
+    client-fingerprint: chrome
+  - name: "1c33259e-singbox_tuic"
+    server: xsdl.juanshen9527.eu.org
+    type: tuic
+    port: 11615
+    uuid: 1c33259e-a3ed-4b30-a108-9d8c49b6d147
+    password: 1c33259e-a3ed-4b30-a108-9d8c49b6d147
+    alpn:
+     - h3
+    congestion-controller: bbr
+    disable-sni: true
+    reduce-rtt: true
+    sni: 1c33259e-singbox_tuic
