@@ -117,32 +117,34 @@ proxies:
     reduce-rtt: true
     sni: 1c33259e-singbox_tuic
 
+  - type: vless
+      name: cf-jp-cdn-js-bang-top
+      server: cdn.jsbang.top
+      port: 443
+      uuid: cc3af387-88ee-411f-8c4c-def01bb78458
+      network: ws
+      tls: true
+      udp: false
+      sni: 443.bestl.de
+      client-fingerprint: chrome
+      ws-opts:
+        path: "/?ed=2048"
+        headers:
+          host: jp-cdn-js-bang-top.juanshen.eu.org
+
   - name: "cf-jp-443-bestl-de"
-    server: jp-443-bestl-de.juanshen.eu.org
+    server: 443.bestl.de
     type: vless
     port: 443
     uuid: cc3af387-88ee-411f-8c4c-def01bb78458
     network: ws
     tls: true
     udp: false
-    sni: 443.bestl.de
+    sni: cd.jsbang.top
     client-fingerprint: chrome
     ws-opts:
       path: "/?ed=2048"
       headers:
-        host: jp.juanshen.eu.org
+        host: jp-443-bestel-de.juanshen.eu.org
 
-  - type: vless
-    name: cf-jp-cdn-js-bang-top
-    server: jp-cdn-js-bang-top.juanshen.eu.org
-    port: 443
-    uuid: cc3af387-88ee-411f-8c4c-def01bb78458
-    network: ws
-    tls: true
-    udp: false
-    sni: cdn.jsbang.top
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        host: jp-cdn-js-bang-top.juanshen.eu.org
+
