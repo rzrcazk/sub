@@ -118,7 +118,7 @@ proxies:
     sni: 1c33259e-singbox_tuic
 
   - name: "cf-jp-443-bestl-de"
-      server: cdn.jsbang.top
+      server: 443.bestl.de
       type: vless
       port: 443
       uuid: cc3af387-88ee-411f-8c4c-def01bb78458
