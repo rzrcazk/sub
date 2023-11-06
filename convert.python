@@ -1,0 +1,30 @@
+import re
+import yaml
+
+# 从文件中读取自定义格式的数据
+with open("data.txt", "r", encoding="utf-8") as file:
+    custom_data = file.read()
+
+# 将自定义格式数据转换为列表
+parsed_data = []
+items = re.split(r'\n\s*-\s*', custom_data)
+for item in items:
+    if item:
+        parsed_item = yaml.safe_load(item)
+        parsed_data.append(parsed_item)
+
+# 检查是否成功解析数据并不为空
+if parsed_data:
+    # 构建YAML格式数据
+    yaml_data = yaml.dump(parsed_data, default_flow_style=False, allow_unicode=True)
+
+    # 创建proxies格式的数据
+    proxies_data = {"proxies": parsed_data}
+
+    # 将proxies格式数据输出到proxies文件
+    with open("proxies.yaml", "w", encoding="utf-8") as proxies_file:
+        yaml.dump(proxies_data, proxies_file, default_flow_style=False, allow_unicode=True)
+
+    print("已生成 proxies.yaml 文件")
+else:
+    print("无法解析输入的数据。请确保输入的数据格式正确。")
