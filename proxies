@@ -595,3 +595,19 @@ proxies:
     server: d4bc243.qf.glados-config.com
     type: ss
     udp: true
+
+  - alterId: 0
+    cipher: auto
+    name: aws-jp-vmess
+    network: ws
+    port: 8000
+    server: 52.195.158.84
+    skip-cert-verify: true
+    tls: false
+    type: vmess
+    udp: true
+    uuid: 4d15e1c5-b5c6-468a-c574-6a139281ccdc
+    ws-opts:
+      headers:
+        Host: 52.195.158.84
+      path: /4d15e1c5
