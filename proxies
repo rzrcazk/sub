@@ -668,7 +668,7 @@ proxies:
 
   - type: vless
     name: cf-vless-yxym
-    server: cf-yxym
+    server: cf-yxym.juanshen.eu.org
     port: 443
     uuid: cc3af387-88ee-411f-8c4c-def01bb78458
     network: ws
