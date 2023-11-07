@@ -596,18 +596,44 @@ proxies:
     type: ss
     udp: true
 
-  - alterId: 0
-    cipher: auto
-    name: aws-jp-vmess
-    network: ws
-    port: 8000
-    server: 52.195.158.84
-    skip-cert-verify: true
-    tls: false
-    type: vmess
+  - name: aws-vision节点               #可自定义名称
+    type: vless
+    server: aws.juanshen.eu.org                             #解析的域名或IP
+    port: 8001                                 #自定义的端口
+    uuid: efeb902b-4296-4a7c-c90e-cfd38d644a94   #自定义的uuid
+    network: tcp
     udp: true
-    uuid: 4d15e1c5-b5c6-468a-c574-6a139281ccdc
-    ws-opts:
-      headers:
-        Host: 52.195.158.84
-      path: /4d15e1c5
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com                   #自定义的第三方域名
+    reality-opts:
+      public-key: Zqo2LxSOGwgMyQ5oly_eJU1GevLlWT4ex8FnVa1HqyU    #自定义的public-key
+      short-id: 6df32dcf                        #自定义的short-id
+    client-fingerprint: chrome                  #自定义的浏览器指纹
+
+  - name: aws-reality-grpc                  #可自定义名称
+    type: vless
+    server: aws.juanshen.eu.org                               #解析的域名或IP
+    port: 8003                                   #自定义的端口
+    uuid: 06a6736c-9650-427d-a4de-bd4a6035ae19    #自定义的uuid
+    network: grpc
+    tls: true
+    udp: true
+    flow:
+    client-fingerprint: chrome                    #自定义的浏览器指纹
+    servername: www.yahoo.com                     #自定义的第三方域名
+    grpc-opts:
+      grpc-service-name: "hjjyuh"                  #" "内自定义的字符
+    reality-opts:
+      public-key: w7Cjmc-uev9mrICO87b-_3dFq_6cdI5h3rxng1lUolQ    #自定义的public-key
+      short-id: 726e58f2                          #自定义的short-id
+  - name: vless-xtls-rprx-vision节点              #可自定义名称
+    type: vless
+    server: aws.juanshen.eu.org                      #解析的域名
+    port: 8000                                  #自定义的端口
+    uuid: 4e99944f-aaf6-4ff9-fdf9-f1e168a09278    #自定义的uuid
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
