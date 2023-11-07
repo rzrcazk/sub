@@ -667,7 +667,7 @@ proxies:
         Host: aws.juanshen.eu.org                       #host域名，与上面的servername一致
 
   - type: vless
-    name: cf-vless
+    name: cf-vless-yxym
     server: cf-yxym
     port: 443
     uuid: cc3af387-88ee-411f-8c4c-def01bb78458
