@@ -667,7 +667,7 @@ proxies:
         Host: aws.juanshen.eu.org                       #host域名，与上面的servername一致
 
   - type: vless
-    name: jp-443-bestl-de.juanshen.eu.org
+    name: cf-vless
     server: jp-443-bestl-de.juanshen.eu.org
     port: 443
     uuid: cc3af387-88ee-411f-8c4c-def01bb78458
