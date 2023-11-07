@@ -637,3 +637,125 @@ proxies:
     udp: true
     flow: xtls-rprx-vision
     client-fingerprint: chrome
+
+  #==============================（vmess-ws节点）
+  - name: aws-vmess-tcp                               #可自定义名称
+    type: vmess
+    server: aws.juanshen.eu.org                          #解析的域名或者优选域名IP
+    port: 8100                                       #自定义的端口
+    uuid: 0c251271-efe8-439c-988c-d332fa3e5cec       #自定义的uuid
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: tcp
+
+  - name: aws-vmess-ws                              #可自定义名称
+    type: vmess
+    server: aws.juanshen.eu.org                          #解析的域名或者优选域名IP
+    port: 8101                                       #自定义的端口
+    uuid: e9709b22-38ce-484e-c891-e7db1bbf75fd       #自定义的uuid
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: aws.juanshen.eu.org                     #sni域名，与下面的host一致
+    ws-opts:
+      path: "/?ed=2048"                              #" "内自定义的path路径
+      headers:
+        Host: aws.juanshen.eu.org                       #host域名，与上面的servername一致
+
+
+
+  #==============================（trojan-tcp-tls节点）
+  - name: trojan-tcp-tls节点                         #可自定义名称
+    type: trojan
+    server: yg.ygkkk.eu.org                          #解析的域名
+    port: 12345                                      #自定义的端口
+    password: 123456789                              #自定义的密码
+    client-fingerprint: chrome
+    udp: true
+    sni: yg.ygkkk.eu.org                             #sni域名，与上面server地址一致
+    alpn:
+      - h2
+      - http/1.1
+    skip-cert-verify: false
+
+  #==============================（hysteria1证书节点）
+  - name: hysteria1证书节点                            #可自定义名称
+    type: hysteria
+    server: yg.ygkkk.eu.org                          #解析的域名
+    port: 12345                                      #自定义的端口，多端口改为 ports:空格1000,2000-3000
+    auth-str: 123456                                 #自定义的密码
+    alpn:
+      - h3
+    protocol: udp                                    #自定义协议：udp/wechat-video/faketcp
+    up: 20                                           #自定义的上传限制
+    down: 100                                        #自定义的下载限制
+    sni: yg.ygkkk.eu.org                             #sni域名，与上面server地址一致
+    skip-cert-verify: false
+    fast-open: true
+
+  #==============================（hysteria1自签节点）
+  - name: hysteria1自签节点                           #可自定义名称
+    type: hysteria
+    server: 1.2.3.4                                  #服务器本地IP
+    port: 12345                                      #自定义的端口，多端口改为 ports:空格1000,2000-3000
+    auth-str: 123456                                 #自定义的密码
+    alpn:
+      - h3
+    protocol: udp                                    #自定义协议：udp/wechat-video/faketcp
+    up: 20                                           #自定义的上传限制
+    down: 100                                        #自定义的下载限制
+    sni: www.bing.com                                #自签证书
+    skip-cert-verify: true
+    fast-open: true
+
+  #==============================（hysteria2证书节点）
+  - name: hysteria2证书节点                            #可自定义名称
+    type: hysteria2
+    server: yg.ygkkk.eu.org                            #解析的域名
+    port: 12345                                        #自定义的端口
+    password: 123456                                   #自定义的密码
+    alpn:
+      - h3
+    sni: yg.ygkkk.eu.org                               #sni域名，与上面server地址一致
+    skip-cert-verify: false
+    fast-open: true
+
+  #==============================（hysteria2自签节点）
+  - name: hysteria2自签节点                             #可自定义名称
+    type: hysteria2
+    server: 1.2.3.4                                     #服务器本地IP
+    port: 12345                                         #自定义的端口
+    password: 123456                                    #自定义的密码
+    alpn:
+      - h3
+    sni: www.bing.com                                    #自签证书
+    skip-cert-verify: true
+    fast-open: true
+
+  #==============================（tuic-V5节点）
+  - name: tuic-V5节点                              #可自定义名称
+    server: yg.ygkkk.eu.org                        #解析的域名或IP
+    port: 12345                                    #自定义的端口
+    type: tuic
+    uuid: a806923b-737c-4581-8b13-56666f911866       #自定义的uuid
+    password: a806923b-737c-4581-8b13-56666f911866   #自定义的密码
+    alpn: [h3]
+    disable-sni: true
+    reduce-rtt: true
+    udp-relay-mode: native
+    congestion-controller: bbr
+
+  #==============================（warp-wireguard节点）
+  - name: warp-wireguard节点                                   #可自定义名称
+    type: wireguard
+    server: 162.159.193.10                                     #可自定义优选对端IP，与下面port的端口相对应
+    port: 2408                                                 #可自定义优选对端IP，与上面server的IP相对应
+    ip: 172.16.0.2
+    ipv6: 2606:4700:190:814e:7de3:5ddb:9d3e:9359               #与private-key相对应，如删除本行，表示仅IPV4
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    private-key: gK3C8ijdVlT7sd5fsdf5ssdfgsdfgsdfgobT2U+rgHo=  #获取private-key，私key
+    udp: true
