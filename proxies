@@ -599,7 +599,7 @@ proxies:
   ## 个人vps aws
   - name: aws-vision节点               #可自定义名称
     type: vless
-    server: cf-yxym.juanshen.eu.org                #解析的域名或IP
+    server: aws.juanshen.eu.org                #解析的域名或IP
     port: 8080                                 #自定义的端口
     uuid: efeb902b-4296-4a7c-c90e-cfd38d644a94   #自定义的uuid
     network: tcp
@@ -614,7 +614,7 @@ proxies:
 
   - name: aws-reality-grpc           #可自定义名称
     type: vless
-    server: cf-yxym.juanshen.eu.org       #解析的域名或IP
+    server: aws.juanshen.eu.org       #解析的域名或IP
     port: 2052                                   #自定义的端口
     uuid: 06a6736c-9650-427d-a4de-bd4a6035ae19    #自定义的uuid
     network: grpc
@@ -629,10 +629,10 @@ proxies:
       public-key: w7Cjmc-uev9mrICO87b-_3dFq_6cdI5h3rxng1lUolQ    #自定义的public-key
       short-id: 726e58f2                          #自定义的short-id
 
-  - name: vless-xtls-rprx-vision节点              #可自定义名称
+  - name: aws-vless-vision-yxym              # openwrt中优选了cf家的域名使用了443端口
     type: vless
     server: cf-yxym.juanshen.eu.org                      #解析的域名
-    port: 8443                                  #自定义的端口
+    port: 443                                  #自定义的端口
     uuid: 4e99944f-aaf6-4ff9-fdf9-f1e168a09278    #自定义的uuid
     network: tcp
     tls: true
@@ -642,7 +642,7 @@ proxies:
 
   - name: aws-vmess-tcp                               #可自定义名称
     type: vmess
-    server: cf-yxym.juanshen.eu.org                          #解析的域名或者优选域名IP
+    server: aws.juanshen.eu.org                          #解析的域名或者优选域名IP
     port: 2082                                       #自定义的端口
     uuid: 0c251271-efe8-439c-988c-d332fa3e5cec       #自定义的uuid
     alterId: 0
@@ -653,7 +653,7 @@ proxies:
 
   - name: aws-vmess-ws                              #可自定义名称
     type: vmess
-    server: cf-yxym.juanshen.eu.org                          #解析的域名或者优选域名IP
+    server: aws.juanshen.eu.org                          #解析的域名或者优选域名IP
     port: 2095                                       #自定义的端口
     uuid: e9709b22-38ce-484e-c891-e7db1bbf75fd       #自定义的uuid
     alterId: 0
