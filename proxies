@@ -596,77 +596,7 @@ proxies:
     type: ss
     udp: true
 
-  ## 个人vps aws
-  - name: aws-vision节点               #可自定义名称
-    type: vless
-    server: aws.juanshen.eu.org                #解析的域名或IP
-    port: 8080                                 #自定义的端口
-    uuid: efeb902b-4296-4a7c-c90e-cfd38d644a94   #自定义的uuid
-    network: tcp
-    udp: true
-    tls: true
-    flow: xtls-rprx-vision
-    servername: www.yahoo.com                   #自定义的第三方域名
-    reality-opts:
-      public-key: Zqo2LxSOGwgMyQ5oly_eJU1GevLlWT4ex8FnVa1HqyU    #自定义的public-key
-      short-id: 6df32dcf                        #自定义的short-id
-    client-fingerprint: chrome                  #自定义的浏览器指纹
-
-  - name: aws-reality-grpc           #可自定义名称
-    type: vless
-    server: aws.juanshen.eu.org       #解析的域名或IP
-    port: 2052                                   #自定义的端口
-    uuid: 06a6736c-9650-427d-a4de-bd4a6035ae19    #自定义的uuid
-    network: grpc
-    tls: true
-    udp: true
-    flow:
-    client-fingerprint: chrome                    #自定义的浏览器指纹
-    servername: www.yahoo.com                     #自定义的第三方域名
-    grpc-opts:
-      grpc-service-name: "hjjyuh"                  #" "内自定义的字符
-    reality-opts:
-      public-key: w7Cjmc-uev9mrICO87b-_3dFq_6cdI5h3rxng1lUolQ    #自定义的public-key
-      short-id: 726e58f2                          #自定义的short-id
-
-  - name: aws-vless-vision-yxym              # openwrt中优选了cf家的域名使用了443端口
-    type: vless
-    server: cf-yxym.juanshen.eu.org                      #解析的域名
-    port: 443                                  #自定义的端口
-    uuid: 4e99944f-aaf6-4ff9-fdf9-f1e168a09278    #自定义的uuid
-    network: tcp
-    tls: true
-    udp: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-
-  - name: aws-vmess-tcp                               #可自定义名称
-    type: vmess
-    server: aws.juanshen.eu.org                          #解析的域名或者优选域名IP
-    port: 2082                                       #自定义的端口
-    uuid: 0c251271-efe8-439c-988c-d332fa3e5cec       #自定义的uuid
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: tcp
-
-  - name: aws-vmess-ws                              #可自定义名称
-    type: vmess
-    server: aws.juanshen.eu.org                          #解析的域名或者优选域名IP
-    port: 2095                                       #自定义的端口
-    uuid: e9709b22-38ce-484e-c891-e7db1bbf75fd       #自定义的uuid
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: aws.juanshen.eu.org                     #sni域名，与下面的host一致
-    ws-opts:
-      path: "/?ed=2048"                              #" "内自定义的path路径
-      headers:
-        Host: aws.juanshen.eu.org                       #host域名，与上面的servername一致
-
+  ## cf-vless
   - type: vless
     name: cf-vless-yxym
     server: cf-yxym.juanshen.eu.org
@@ -682,9 +612,68 @@ proxies:
       headers:
         host: jp-443-bestl-de.juanshen.eu.org
 
+  ## aws
+  - client-fingerprint: chrome
+    name: aws-reality-grpc
+    network: grpc
+    port: 8004
+    reality-opts:
+      public-key: UgytG0HyxE5qTkQCaY3tHq6Ufthw4rBQc310Vc0RLBk
+      short-id: 1dc4335a
+    server: 52.195.158.84
+    servername: www.yahoo.com
+    tls: true
+    type: vless
+    udp: true
+    uuid: 0eabc634-d6a0-4428-8b99-f24b00fbc578
+
+  - client-fingerprint: chrome
+    name: aws-reality-h2
+    network: http
+    port: 8003
+    reality-opts:
+      public-key: zpD1G5KxLGrJ4sX_66hF81GS1J5o5uLhVasY6DamsHI
+      short-id: '88309261'
+    server: 52.195.158.84
+    servername: www.yahoo.com
+    tls: true
+    type: vless
+    udp: true
+    uuid: aabd89a5-af12-43d0-c386-8fe2edace503
 
 
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: aws-relatiy-tcp
+    network: tcp
+    port: 8002
+    reality-opts:
+      public-key: ObqQBZzcVBpFR9PUnxux-DK44KfNERLHhKrV6t1dtzA
+      short-id: 154e37ad
+    server: 52.195.158.84
+    servername: www.yahoo.com
+    tls: true
+    type: vless
+    udp: true
+    uuid: a064fdad-ced5-4426-ed83-8c39c6f98caf
 
+  - name: defaultName
+      port: null
+      server: update.glados-config.com/clash/200659/8849673/45839/glados.yaml
+      skip-cert-verify: true
+      tls: true
+      type: http
+      - alpn:
+        - http/1.1
+        - h2
+        flow: xtls-rprx-vision
+        name: aws-vless
+        network: tcp
+        port: 8000
+        server: aws.juanshen.eu.org
+        tls: true
+        type: vless
+        uuid: 99c1c905-8d9d-428e-e7c3-57886581066e
 
 
 
