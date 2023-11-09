@@ -613,67 +613,23 @@ proxies:
         host: jp-443-bestl-de.juanshen.eu.org
 
   ## aws
-  - client-fingerprint: chrome
-    name: aws-reality-grpc
-    network: grpc
-    port: 8004
-    reality-opts:
-      public-key: UgytG0HyxE5qTkQCaY3tHq6Ufthw4rBQc310Vc0RLBk
-      short-id: 1dc4335a
-    server: 52.195.158.84
-    servername: www.yahoo.com
-    tls: true
-    type: vless
+  - alterId: 0
+    cipher: auto
+    client-fingerprint: chrome
+    name: aws-vmess
+    port: 80
+    server: aws.juanshen.eu.org
+    skip-cert-verify: true
+    tfo: false
+    tls: false
+    type: vmess
     udp: true
-    uuid: 0eabc634-d6a0-4428-8b99-f24b00fbc578
-
-  - client-fingerprint: chrome
-    name: aws-reality-h2
-    network: http
-    port: 8003
-    reality-opts:
-      public-key: zpD1G5KxLGrJ4sX_66hF81GS1J5o5uLhVasY6DamsHI
-      short-id: '88309261'
-    server: 52.195.158.84
-    servername: www.yahoo.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: aabd89a5-af12-43d0-c386-8fe2edace503
+    uuid: 4da7f4bb-64e7-4e9e-d716-7dbbf4263a4e
 
 
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    name: aws-relatiy-tcp
-    network: tcp
-    port: 8002
-    reality-opts:
-      public-key: ObqQBZzcVBpFR9PUnxux-DK44KfNERLHhKrV6t1dtzA
-      short-id: 154e37ad
-    server: 52.195.158.84
-    servername: www.yahoo.com
-    tls: true
-    type: vless
-    udp: true
-    uuid: a064fdad-ced5-4426-ed83-8c39c6f98caf
 
-  - name: defaultName
-      port: null
-      server: update.glados-config.com/clash/200659/8849673/45839/glados.yaml
-      skip-cert-verify: true
-      tls: true
-      type: http
-      - alpn:
-        - http/1.1
-        - h2
-        flow: xtls-rprx-vision
-        name: aws-vless
-        network: tcp
-        port: 8000
-        server: aws.juanshen.eu.org
-        tls: true
-        type: vless
-        uuid: 99c1c905-8d9d-428e-e7c3-57886581066e
+
+
 
 
 
