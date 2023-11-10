@@ -38,6 +38,7 @@ tun:
   auto-route: true
   auto-detect-interface: true
 
+
 dns:
   enable: true
   listen: 0.0.0.0:1053
