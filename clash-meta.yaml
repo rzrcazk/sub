@@ -64,7 +64,7 @@ proxy-providers:
   juanshen_provider:
     type: http
     path: ./juanshen_provider.yaml
-    url: http://short.juanshen.eu.org/hkxGCt
+    url: https://short.juanshen.eu.org/hkxGCt
     interval: 3600
     health-check:
       enable: false
