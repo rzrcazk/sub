@@ -219,7 +219,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚀 自建节点
       - DIRECT
-
   - name: Google
     type: select
     use:
@@ -229,7 +228,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🚀 自建节点
       - DIRECT
-
   - name: 国内媒体
     type: select
     use:
