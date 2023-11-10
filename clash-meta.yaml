@@ -72,6 +72,12 @@ proxy-providers:
       interval: 300
 
 proxy-groups:
+  - name: ✈️ 手动选择
+    type: select
+    use:
+      - juanshen_provider
+    proxies: null
+
   - name: 🚁 自建节点
     type: select
     use:
@@ -105,11 +111,8 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - DIRECT
-  - name: ✈️ 手动选择
-    type: select
-    use:
-      - juanshen_provider
-    proxies: null
+
+
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
