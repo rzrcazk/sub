@@ -145,6 +145,7 @@ proxy-groups:
     proxies:
       - ✈️ 手动选择
       - ♻️ 自动选择
+
   - name: YouTube
     type: select
     use:
