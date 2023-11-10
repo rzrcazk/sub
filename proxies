@@ -5,7 +5,7 @@ proxies:
     name: aws-vmess-cdn
     network: ws
     port: 80
-    server: aws.juanshen.eu.org
+    server: cf-cdn.juanshen.eu.org
     skip-cert-verify: true
     tfo: false
     tls: false
