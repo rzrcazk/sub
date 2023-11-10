@@ -83,14 +83,6 @@ proxy-groups:
       - 🔮 负载均衡
       - DIRECT
 
-  - name: 🚀 自建节点
-    type: select
-    use:
-      - juanshen_provider
-    proxies:
-      - aws-vmess-cdn
-      - cf-vless
-
   - name: 流媒体
     type: select
     use:
