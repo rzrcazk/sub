@@ -61,9 +61,9 @@ dns:
       - https://dns.alidns.com/dns-query#h3=true
 
 proxy-providers:
-  qejbhyctub_provider:
+  juanshen_provider:
     type: http
-    path: ./qejbhyctub_provider.yaml
+    path: ./juanshen_provider.yaml
     url: https://short.juanshen.eu.org/hkxGCt
     interval: 3600
     health-check:
@@ -75,7 +75,7 @@ proxy-groups:
   - name: 节点选择
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - 手动切换
       - 自动选择
@@ -85,7 +85,7 @@ proxy-groups:
   - name: 流媒体
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - 手动切换
       - 自动选择
@@ -95,7 +95,7 @@ proxy-groups:
   - name: 手动切换
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies: null
   - name: 自动选择
     type: url-test
@@ -103,7 +103,7 @@ proxy-groups:
     interval: 36000
     tolerance: 50
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies: null
   - name: 故障转移
     type: fallback
@@ -111,7 +111,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - 自动选择
   - name: 负载均衡
@@ -120,19 +120,19 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies: null
   - name: 全球代理
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - 手动切换
       - 自动选择
   - name: DNS_Proxy
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - 自动选择
       - 节点选择
@@ -141,7 +141,7 @@ proxy-groups:
   - name: Telegram
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - 手动切换
       - 自动选择
@@ -149,14 +149,14 @@ proxy-groups:
   - name: YouTube
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - 手动切换
       - 自动选择
   - name: Netflix
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - 流媒体
       - 节点选择
@@ -164,7 +164,7 @@ proxy-groups:
   - name: HBO
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - 流媒体
       - 节点选择
@@ -172,21 +172,21 @@ proxy-groups:
   - name: Bing
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - 节点选择
       - 自动选择
   - name: OpenAI
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - 节点选择
       - 自动选择
   - name: Disney
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - 流媒体
       - 节点选择
@@ -194,7 +194,7 @@ proxy-groups:
   - name: GitHub
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - 手动切换
       - 自动选择
@@ -202,7 +202,7 @@ proxy-groups:
   - name: Spotify
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - 流媒体
       - 手动切换
@@ -211,7 +211,7 @@ proxy-groups:
   - name: Google
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - 手动切换
       - 自动选择
@@ -219,13 +219,13 @@ proxy-groups:
   - name: 国内媒体
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - DIRECT
   - name: 本地直连
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - DIRECT
       - 节点选择
@@ -233,7 +233,7 @@ proxy-groups:
   - name: 漏网之鱼
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - DIRECT
       - 节点选择
