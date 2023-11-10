@@ -72,7 +72,7 @@ proxy-providers:
       interval: 300
 
 proxy-groups:
-  - name: 节点选择
+  - name: 🛩️ 节点选择
     type: select
     use:
       - juanshen_provider
@@ -135,7 +135,7 @@ proxy-groups:
       - juanshen_provider
     proxies:
       - ♻️ 自动选择
-      - 节点选择
+      - 🛩️ 节点选择
       - DIRECT
 
   - name: Telegram
@@ -159,7 +159,7 @@ proxy-groups:
       - juanshen_provider
     proxies:
       - 流媒体
-      - 节点选择
+      - 🛩️ 节点选择
       - ♻️ 自动选择
   - name: HBO
     type: select
@@ -167,21 +167,21 @@ proxy-groups:
       - juanshen_provider
     proxies:
       - 流媒体
-      - 节点选择
+      - 🛩️ 节点选择
       - ♻️ 自动选择
   - name: Bing
     type: select
     use:
       - juanshen_provider
     proxies:
-      - 节点选择
+      - 🛩️ 节点选择
       - ♻️ 自动选择
   - name: OpenAI
     type: select
     use:
       - juanshen_provider
     proxies:
-      - 节点选择
+      - 🛩️ 节点选择
       - ♻️ 自动选择
   - name: Disney
     type: select
@@ -189,7 +189,7 @@ proxy-groups:
       - juanshen_provider
     proxies:
       - 流媒体
-      - 节点选择
+      - 🛩️ 节点选择
       - ♻️ 自动选择
   - name: GitHub
     type: select
@@ -228,17 +228,19 @@ proxy-groups:
       - juanshen_provider
     proxies:
       - DIRECT
-      - 节点选择
+      - 🛩️ 节点选择
       - ♻️ 自动选择
+
   - name: 漏网之鱼
     type: select
     use:
       - juanshen_provider
     proxies:
       - DIRECT
-      - 节点选择
+      - 🛩️ 节点选择
       - ✈️ 手动选择
       - ♻️ 自动选择
+
 rule-providers:
   lan:
     type: http
