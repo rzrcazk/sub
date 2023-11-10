@@ -72,6 +72,19 @@ proxy-providers:
       interval: 300
 
 proxy-groups:
+  - name: 🚁 自建节点
+    type: select
+    use:
+      - juanshen_provider
+    proxies:
+      proxies:
+        - "aws-vmess-cdn" # 你自己的节点名称
+        - "cf-vless" # 你自己的节点名称
+        # ... 其他你自建的节点
+      filter:
+        - "regexp"
+        - "^(?!aws|cf).*" # 这个正则表达式表示不匹配以aws或cf开头的节点名称
+
   - name: 🛩️ 节点选择
     type: select
     use:
