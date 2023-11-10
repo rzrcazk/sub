@@ -141,7 +141,7 @@ proxy-groups:
   - name: 🎦 HBOGO
     type: select
     use:
-      - qejbhyctub_provider
+      - juanshen_provider
     proxies:
       - 流媒体
       - 节点选择
