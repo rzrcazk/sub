@@ -146,7 +146,7 @@ proxy-groups:
       - ✈️ 手动选择
       - ♻️ 自动选择
 
-  - name: YouTube
+  - name: 📹 YouTube
     type: select
     use:
       - juanshen_provider
@@ -161,14 +161,7 @@ proxy-groups:
       - 流媒体
       - 节点选择
       - ♻️ 自动选择
-  - name: HBO
-    type: select
-    use:
-      - juanshen_provider
-    proxies:
-      - 流媒体
-      - 节点选择
-      - ♻️ 自动选择
+
   - name: Bing
     type: select
     use:
@@ -176,14 +169,16 @@ proxy-groups:
     proxies:
       - 节点选择
       - ♻️ 自动选择
-  - name: OpenAI
+
+  - name: 🧚 ChatGPT
     type: select
     use:
       - juanshen_provider
     proxies:
       - 节点选择
       - ♻️ 自动选择
-  - name: Disney
+
+  - name: 🐹 Disney
     type: select
     use:
       - juanshen_provider
@@ -191,7 +186,8 @@ proxy-groups:
       - 流媒体
       - 节点选择
       - ♻️ 自动选择
-  - name: GitHub
+
+  - name: 👨‍💻 GitHub
     type: select
     use:
       - juanshen_provider
@@ -199,7 +195,8 @@ proxy-groups:
       - ✈️ 手动选择
       - ♻️ 自动选择
       - DIRECT
-  - name: Spotify
+
+  - name: 🎵 Spotify
     type: select
     use:
       - juanshen_provider
@@ -208,6 +205,7 @@ proxy-groups:
       - ✈️ 手动选择
       - ♻️ 自动选择
       - DIRECT
+
   - name: Google
     type: select
     use:
@@ -216,12 +214,14 @@ proxy-groups:
       - ✈️ 手动选择
       - ♻️ 自动选择
       - DIRECT
-  - name: 国内媒体
+
+  - name: 🌏 国内媒体
     type: select
     use:
       - juanshen_provider
     proxies:
       - DIRECT
+
   - name: 本地直连
     type: select
     use:
@@ -230,7 +230,8 @@ proxy-groups:
       - DIRECT
       - 节点选择
       - ♻️ 自动选择
-  - name: 漏网之鱼
+
+  - name: 🐟 漏网之鱼
     type: select
     use:
       - juanshen_provider
@@ -239,6 +240,7 @@ proxy-groups:
       - 节点选择
       - ✈️ 手动选择
       - ♻️ 自动选择
+
 rule-providers:
   lan:
     type: http
