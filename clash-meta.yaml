@@ -231,7 +231,7 @@ proxy-groups:
       - 🛩️ 节点选择
       - ♻️ 自动选择
 
-  - name: 漏网之鱼
+  - name: 🐟 漏网之鱼
     type: select
     use:
       - juanshen_provider
@@ -386,4 +386,4 @@ rules:
   - RULE-SET,ChinaMaxIPNoIPv6,本地直连,no-resolve
   - RULE-SET,lan,本地直连,no-resolve
   - GEOIP,CN,本地直连
-  - MATCH,漏网之鱼
+  - MATCH,🐟 漏网之鱼
