@@ -122,7 +122,7 @@ proxy-groups:
     use:
       - juanshen_provider
     proxies: null
-  - name: 🌍 全球代理
+  - name: 全球代理
     type: select
     use:
       - juanshen_provider
@@ -176,8 +176,7 @@ proxy-groups:
     proxies:
       - 🛩️ 节点选择
       - ♻️ 自动选择
-
-  - name: 🧚 OpenAI
+  - name: OpenAI
     type: select
     use:
       - juanshen_provider
@@ -378,10 +377,10 @@ rules:
   - RULE-SET,Netflix,Netflix
   - RULE-SET,HBO,HBO
   - RULE-SET,Bing,Bing
-  - RULE-SET,OpenAI,🧚 OpenAI
+  - RULE-SET,OpenAI,OpenAI
   - RULE-SET,Disney,Disney
-  - RULE-SET,proxy,🌍 全球代理
-  - RULE-SET,gfw,🌍 全球代理
+  - RULE-SET,proxy,全球代理
+  - RULE-SET,gfw,全球代理
   - RULE-SET,applications,本地直连
   - RULE-SET,ChinaMaxDomain,本地直连
   - RULE-SET,ChinaMaxIPNoIPv6,本地直连,no-resolve
