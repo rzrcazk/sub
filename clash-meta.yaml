@@ -85,10 +85,11 @@ proxy-groups:
 
   - name: 🚀 自建节点
     type: select
+    use:
+      - juanshen_provider
     proxies:
-      - aws-vmess-cdn  # 您自建的节点1
-      - cf-vless  # 您自建的节点2
-      # ... 其他你自建的节点
+      - aws-vmess-cdn
+      - cf-vless
 
   - name: 流媒体
     type: select
