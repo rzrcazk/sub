@@ -81,7 +81,34 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔰 故障转移
       - 🔮 负载均衡
+      - 🚀 自建节点
       - DIRECT
+
+  - name: ✈️ 手动选择
+    type: select
+    use:
+      - qejbhyctub_provider
+    proxies: null
+
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 36000
+    tolerance: 50
+    use:
+      - qejbhyctub_provider
+    proxies: null
+
+  - name: 🚀 自建节点
+    type: select
+    proxies:
+      - "aws-vmess-cdn" # 你自己的节点名称
+      - "cf-vless" # 你自己的节点名称
+    # ... 其他你自建的节点
+    filter:
+      - "regexp"
+      - "^(?!aws|cf).*" # 这个正则表达式表示不匹配以aws或cf开头的节点名称
+
   - name: 流媒体
     type: select
     use:
@@ -91,20 +118,9 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔰 故障转移
       - 🔮 负载均衡
+      - 🚀 自建节点
       - DIRECT
-  - name: ✈️ 手动选择
-    type: select
-    use:
-      - qejbhyctub_provider
-    proxies: null
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 36000
-    tolerance: 50
-    use:
-      - qejbhyctub_provider
-    proxies: null
+
   - name: 🔰 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -114,6 +130,7 @@ proxy-groups:
       - qejbhyctub_provider
     proxies:
       - ♻️ 自动选择
+
   - name: 🔮 负载均衡
     type: load-balance
     url: http://www.gstatic.com/generate_204
@@ -129,14 +146,6 @@ proxy-groups:
     proxies:
       - ✈️ 手动选择
       - ♻️ 自动选择
-  - name: DNS_Proxy
-    type: select
-    use:
-      - qejbhyctub_provider
-    proxies:
-      - ♻️ 自动选择
-      - 节点选择
-      - DIRECT
 
   - name: Telegram
     type: select
@@ -144,6 +153,7 @@ proxy-groups:
       - qejbhyctub_provider
     proxies:
       - ✈️ 手动选择
+      - 🚀 自建节点
       - ♻️ 自动选择
 
   - name: YouTube
@@ -153,6 +163,8 @@ proxy-groups:
     proxies:
       - ✈️ 手动选择
       - ♻️ 自动选择
+      - 🚀 自建节点
+
   - name: Netflix
     type: select
     use:
@@ -161,6 +173,7 @@ proxy-groups:
       - 流媒体
       - 节点选择
       - ♻️ 自动选择
+
   - name: HBO
     type: select
     use:
@@ -169,6 +182,7 @@ proxy-groups:
       - 流媒体
       - 节点选择
       - ♻️ 自动选择
+
   - name: Bing
     type: select
     use:
@@ -176,21 +190,15 @@ proxy-groups:
     proxies:
       - 节点选择
       - ♻️ 自动选择
+
   - name: OpenAI
     type: select
     use:
       - qejbhyctub_provider
     proxies:
-      - 节点选择
+      - 🚀 自建节点
       - ♻️ 自动选择
-  - name: Disney
-    type: select
-    use:
-      - qejbhyctub_provider
-    proxies:
-      - 流媒体
-      - 节点选择
-      - ♻️ 自动选择
+
   - name: GitHub
     type: select
     use:
@@ -198,7 +206,9 @@ proxy-groups:
     proxies:
       - ✈️ 手动选择
       - ♻️ 自动选择
+      - 🚀 自建节点
       - DIRECT
+
   - name: Spotify
     type: select
     use:
@@ -207,7 +217,9 @@ proxy-groups:
       - 流媒体
       - ✈️ 手动选择
       - ♻️ 自动选择
+      - 🚀 自建节点
       - DIRECT
+
   - name: Google
     type: select
     use:
@@ -215,13 +227,16 @@ proxy-groups:
     proxies:
       - ✈️ 手动选择
       - ♻️ 自动选择
+      - 🚀 自建节点
       - DIRECT
+
   - name: 国内媒体
     type: select
     use:
       - qejbhyctub_provider
     proxies:
       - DIRECT
+
   - name: 本地直连
     type: select
     use:
@@ -230,6 +245,7 @@ proxy-groups:
       - DIRECT
       - 节点选择
       - ♻️ 自动选择
+
   - name: 漏网之鱼
     type: select
     use:
@@ -239,6 +255,7 @@ proxy-groups:
       - 节点选择
       - ✈️ 手动选择
       - ♻️ 自动选择
+
 rule-providers:
   lan:
     type: http
