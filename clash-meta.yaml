@@ -70,9 +70,6 @@ proxy-providers:
       enable: false
       url: http://www.gstatic.com/generate_204
       interval: 300
-    filter: # Filter is usually here, inside the provider's config, not in a group
-      - "regexp"
-      - "^(?!aws|cf).*"
 
 proxy-groups:
   - name: 🛩️ 节点选择
@@ -85,15 +82,6 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - DIRECT
-
-  - name: 🚀 自建节点
-    type: select
-    use:
-      - juanshen_provider
-    proxies:
-      - "aws-vmess-cdn" # 你自己的节点名称
-      - "cf-vless" # 你自己的节点名称
-
   - name: 流媒体
     type: select
     use:
