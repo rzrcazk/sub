@@ -88,7 +88,7 @@ proxy-groups:
     use:
       - juanshen_provider
     proxies:
-      - "aws-vms-cdn" # 你自己的节点名称
+      - "aws-vmess-cdn" # 你自己的节点名称
       - "cf-vless" # 你自己的节点名称
     # ... 其他你自建的节点
     filter:
