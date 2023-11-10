@@ -101,6 +101,8 @@ proxy-groups:
 
   - name: 🚀 自建节点
     type: select
+    use:
+      - qejbhyctub_provider
     proxies:
       - "aws-vmess-cdn" # 你自己的节点名称
       - "cf-vless" # 你自己的节点名称
