@@ -77,27 +77,32 @@ proxy-groups:
     use:
       - qejbhyctub_provider
     proxies:
-      - 手动切换
-      - 自动选择
-      - 故障转移
-      - 负载均衡
+      - ✈️ 手动选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡
+      - 🚁 自建节点
       - DIRECT
+
   - name: 流媒体
     type: select
     use:
       - qejbhyctub_provider
     proxies:
-      - 手动切换
-      - 自动选择
-      - 故障转移
-      - 负载均衡
+      - ✈️ 手动选择
+      - ♻️ 自动选择
+      - 🔯 故障转移
+      - 🔮 负载均衡
+      - 🚁 自建节点
       - DIRECT
-  - name: 手动切换
+
+  - name: ✈️ 手动选择
     type: select
     use:
       - qejbhyctub_provider
     proxies: null
-  - name: 自动选择
+
+  - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 36000
@@ -105,7 +110,8 @@ proxy-groups:
     use:
       - qejbhyctub_provider
     proxies: null
-  - name: 故障转移
+
+  - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -113,8 +119,9 @@ proxy-groups:
     use:
       - qejbhyctub_provider
     proxies:
-      - 自动选择
-  - name: 负载均衡
+      - ♻️ 自动选择
+
+  - name: 🔮 负载均衡
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -122,19 +129,21 @@ proxy-groups:
     use:
       - qejbhyctub_provider
     proxies: null
+
   - name: 全球代理
     type: select
     use:
       - qejbhyctub_provider
     proxies:
-      - 手动切换
-      - 自动选择
+      - ✈️ 手动选择
+      - ♻️ 自动选择
+
   - name: DNS_Proxy
     type: select
     use:
       - qejbhyctub_provider
     proxies:
-      - 自动选择
+      - ♻️ 自动选择
       - 节点选择
       - DIRECT
 
@@ -143,16 +152,16 @@ proxy-groups:
     use:
       - qejbhyctub_provider
     proxies:
-      - 手动切换
-      - 自动选择
+      - ✈️ 手动选择
+      - ♻️ 自动选择
 
   - name: YouTube
     type: select
     use:
       - qejbhyctub_provider
     proxies:
-      - 手动切换
-      - 自动选择
+      - ✈️ 手动选择
+      - ♻️ 自动选择
   - name: Netflix
     type: select
     use:
@@ -160,7 +169,7 @@ proxy-groups:
     proxies:
       - 流媒体
       - 节点选择
-      - 自动选择
+      - ♻️ 自动选择
   - name: HBO
     type: select
     use:
@@ -168,21 +177,21 @@ proxy-groups:
     proxies:
       - 流媒体
       - 节点选择
-      - 自动选择
+      - ♻️ 自动选择
   - name: Bing
     type: select
     use:
       - qejbhyctub_provider
     proxies:
       - 节点选择
-      - 自动选择
+      - ♻️ 自动选择
   - name: OpenAI
     type: select
     use:
       - qejbhyctub_provider
     proxies:
       - 节点选择
-      - 自动选择
+      - ♻️ 自动选择
   - name: Disney
     type: select
     use:
@@ -190,14 +199,14 @@ proxy-groups:
     proxies:
       - 流媒体
       - 节点选择
-      - 自动选择
+      - ♻️ 自动选择
   - name: GitHub
     type: select
     use:
       - qejbhyctub_provider
     proxies:
-      - 手动切换
-      - 自动选择
+      - ✈️ 手动选择
+      - ♻️ 自动选择
       - DIRECT
   - name: Spotify
     type: select
@@ -205,16 +214,16 @@ proxy-groups:
       - qejbhyctub_provider
     proxies:
       - 流媒体
-      - 手动切换
-      - 自动选择
+      - ✈️ 手动选择
+      - ♻️ 自动选择
       - DIRECT
   - name: Google
     type: select
     use:
       - qejbhyctub_provider
     proxies:
-      - 手动切换
-      - 自动选择
+      - ✈️ 手动选择
+      - ♻️ 自动选择
       - DIRECT
   - name: 国内媒体
     type: select
@@ -229,7 +238,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - 节点选择
-      - 自动选择
+      - ♻️ 自动选择
   - name: 漏网之鱼
     type: select
     use:
@@ -237,8 +246,8 @@ proxy-groups:
     proxies:
       - DIRECT
       - 节点选择
-      - 手动切换
-      - 自动选择
+      - ✈️ 手动选择
+      - ♻️ 自动选择
 rule-providers:
   lan:
     type: http
