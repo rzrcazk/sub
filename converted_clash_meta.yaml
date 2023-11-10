@@ -1,0 +1,235 @@
+rule-providers:
+- GitHub:
+    type: http
+    behavior: classical
+    path: ./ruleset/GitHub.yaml
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
+    interval: 86400
+- "\u56FD\u5185\u6D41\u91CF":
+    type: http
+    behavior: domain
+    path: "./ruleset/\u56FD\u5185\u6D41\u91CF.yaml"
+    url: //github.juanshen.eu.org/https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/Inside.list
+    interval: 86400
+- "\u56FD\u5916\u6D41\u91CF":
+    type: http
+    behavior: domain
+    path: "./ruleset/\u56FD\u5916\u6D41\u91CF.yaml"
+    url: //github.juanshen.eu.org/https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/Outside.list
+    interval: 86400
+- ChatGPT:
+    type: http
+    behavior: domain
+    path: ./ruleset/ChatGPT.yaml
+    url: //github.juanshen.eu.org/https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/ChatGPT.list
+    interval: 86400
+- ChatGPT:
+    type: http
+    behavior: classical
+    path: ./ruleset/ChatGPT.yaml
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
+    interval: 86400
+- "\u56FD\u5185\u6D41\u91CF":
+    type: http
+    behavior: classical
+    path: "./ruleset/\u56FD\u5185\u6D41\u91CF.yaml"
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
+    interval: 86400
+- "\u56FD\u5185\u6D41\u91CF":
+    type: http
+    behavior: domain
+    path: "./ruleset/\u56FD\u5185\u6D41\u91CF.yaml"
+    url: //github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+    interval: 86400
+- "\u56FD\u5916\u6D41\u91CF":
+    type: http
+    behavior: classical
+    path: "./ruleset/\u56FD\u5916\u6D41\u91CF.yaml"
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PikPak/PikPak.yaml
+    interval: 86400
+- "IP\u5F52\u5C5E\u5730\u4F2A\u88C5":
+    type: http
+    behavior: classical
+    path: "./ruleset/IP\u5F52\u5C5E\u5730\u4F2A\u88C5.yaml"
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/lwd-temp/anti-ip-attribution/main/generated/rule-provider.yaml
+    interval: 86400
+- "\u5E7F\u544A\u62E6\u622A":
+    type: http
+    behavior: classical
+    path: "./ruleset/\u5E7F\u544A\u62E6\u622A.yaml"
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ZhihuAds/ZhihuAds.yaml
+    interval: 86400
+- YouTube:
+    type: http
+    behavior: classical
+    path: ./ruleset/YouTube.yaml
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+    interval: 86400
+- Netflix:
+    type: http
+    behavior: classical
+    path: ./ruleset/Netflix.yaml
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
+    interval: 86400
+- DisneyPlus:
+    type: http
+    behavior: classical
+    path: ./ruleset/DisneyPlus.yaml
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml
+    interval: 86400
+- PrimeVideo:
+    type: http
+    behavior: classical
+    path: ./ruleset/PrimeVideo.yaml
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonPrimeVideo/AmazonPrimeVideo.yaml
+    interval: 86400
+- HBOGO:
+    type: http
+    behavior: classical
+    path: ./ruleset/HBOGO.yaml
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBOHK/HBOHK.yaml
+    interval: 86400
+- HBOGO:
+    type: http
+    behavior: classical
+    path: ./ruleset/HBOGO.yaml
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBOAsia/HBOAsia.yaml
+    interval: 86400
+- HBOMAX:
+    type: http
+    behavior: classical
+    path: ./ruleset/HBOMAX.yaml
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBOUSA/HBOUSA.yaml
+    interval: 86400
+- AppleTV:
+    type: http
+    behavior: classical
+    path: ./ruleset/AppleTV.yaml
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleTV/AppleTV.yaml
+    interval: 86400
+- EMBY:
+    type: http
+    behavior: classical
+    path: ./ruleset/EMBY.yaml
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/Emby.yaml
+    interval: 86400
+- EMBY:
+    type: http
+    behavior: classical
+    path: ./ruleset/EMBY.yaml
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Emby/Emby.yaml
+    interval: 86400
+- "\u5DF4\u54C8\u59C6\u7279":
+    type: http
+    behavior: classical
+    path: "./ruleset/\u5DF4\u54C8\u59C6\u7279.yaml"
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bahamut/Bahamut.yaml
+    interval: 86400
+- Bilibili:
+    type: http
+    behavior: domain
+    path: ./ruleset/Bilibili.yaml
+    url: //github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
+    interval: 86400
+- Bilibili:
+    type: http
+    behavior: domain
+    path: ./ruleset/Bilibili.yaml
+    url: //github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
+    interval: 86400
+- Spotify:
+    type: http
+    behavior: classical
+    path: ./ruleset/Spotify.yaml
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
+    interval: 86400
+- TikTok:
+    type: http
+    behavior: classical
+    path: ./ruleset/TikTok.yaml
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
+    interval: 86400
+- "\u56FD\u5916\u5A92\u4F53":
+    type: http
+    behavior: classical
+    path: "./ruleset/\u56FD\u5916\u5A92\u4F53.yaml"
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
+    interval: 86400
+- "\u56FD\u5185\u5A92\u4F53":
+    type: http
+    behavior: classical
+    path: "./ruleset/\u56FD\u5185\u5A92\u4F53.yaml"
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+    interval: 86400
+- "\u8C37\u6B4CFCM":
+    type: http
+    behavior: domain
+    path: "./ruleset/\u8C37\u6B4CFCM.yaml"
+    url: //github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+    interval: 86400
+- "\u56FD\u5185\u6D41\u91CF":
+    type: http
+    behavior: domain
+    path: "./ruleset/\u56FD\u5185\u6D41\u91CF.yaml"
+    url: //github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+    interval: 86400
+- "\u5FAE\u8F6F\u4E91\u76D8":
+    type: http
+    behavior: classical
+    path: "./ruleset/\u5FAE\u8F6F\u4E91\u76D8.yaml"
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.yaml
+    interval: 86400
+- "\u5FAE\u8F6F\u670D\u52A1":
+    type: http
+    behavior: classical
+    path: "./ruleset/\u5FAE\u8F6F\u670D\u52A1.yaml"
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+    interval: 86400
+- "\u82F9\u679C\u670D\u52A1":
+    type: http
+    behavior: classical
+    path: "./ruleset/\u82F9\u679C\u670D\u52A1.yaml"
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml
+    interval: 86400
+- Telegram:
+    type: http
+    behavior: classical
+    path: ./ruleset/Telegram.yaml
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+    interval: 86400
+- Discord:
+    type: http
+    behavior: classical
+    path: ./ruleset/Discord.yaml
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord.yaml
+    interval: 86400
+- "\u6E38\u620F\u5E73\u53F0":
+    type: http
+    behavior: classical
+    path: "./ruleset/\u6E38\u620F\u5E73\u53F0.yaml"
+    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml
+    interval: 86400
+- "\u56FD\u5916\u6D41\u91CF":
+    type: http
+    behavior: domain
+    path: "./ruleset/\u56FD\u5916\u6D41\u91CF.yaml"
+    url: //github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+    interval: 86400
+- "\u56FD\u5185\u6D41\u91CF":
+    type: http
+    behavior: domain
+    path: "./ruleset/\u56FD\u5185\u6D41\u91CF.yaml"
+    url: //github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+    interval: 86400
+- "\u56FD\u5185\u6D41\u91CF":
+    type: http
+    behavior: domain
+    path: "./ruleset/\u56FD\u5185\u6D41\u91CF.yaml"
+    url: //github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+    interval: 86400
+- "\u56FD\u5185\u6D41\u91CF":
+    type: http
+    behavior: domain
+    path: "./ruleset/\u56FD\u5185\u6D41\u91CF.yaml"
+    url: //github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+    interval: 86400

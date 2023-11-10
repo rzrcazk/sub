@@ -61,9 +61,9 @@ dns:
       - https://dns.alidns.com/dns-query#h3=true
 
 proxy-providers:
-  qejbhyctub_provider:
+  clash_meta_provider:
     type: http
-    path: ./qejbhyctub_provider.yaml
+    path: ./clash_meta_provider.yaml
     url: https://short.juanshen.eu.org/hkxGCt
     interval: 3600
     health-check:
@@ -75,7 +75,7 @@ proxy-groups:
   - name: 节点选择
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - 手动切换
       - 自动选择
@@ -85,7 +85,7 @@ proxy-groups:
   - name: 流媒体
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - 手动切换
       - 自动选择
@@ -95,7 +95,7 @@ proxy-groups:
   - name: 手动切换
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies: null
   - name: 自动选择
     type: url-test
@@ -103,7 +103,7 @@ proxy-groups:
     interval: 36000
     tolerance: 50
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies: null
   - name: 故障转移
     type: fallback
@@ -111,7 +111,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - 自动选择
   - name: 负载均衡
@@ -120,19 +120,19 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies: null
   - name: 全球代理
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - 手动切换
       - 自动选择
   - name: DNS_Proxy
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - 自动选择
       - 节点选择
@@ -141,7 +141,7 @@ proxy-groups:
   - name: Telegram
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - 手动切换
       - 自动选择
@@ -149,14 +149,14 @@ proxy-groups:
   - name: YouTube
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - 手动切换
       - 自动选择
   - name: Netflix
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - 流媒体
       - 节点选择
@@ -164,7 +164,7 @@ proxy-groups:
   - name: HBO
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - 流媒体
       - 节点选择
@@ -172,21 +172,21 @@ proxy-groups:
   - name: Bing
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - 节点选择
       - 自动选择
   - name: OpenAI
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - 节点选择
       - 自动选择
   - name: Disney
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - 流媒体
       - 节点选择
@@ -194,7 +194,7 @@ proxy-groups:
   - name: GitHub
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - 手动切换
       - 自动选择
@@ -202,7 +202,7 @@ proxy-groups:
   - name: Spotify
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - 流媒体
       - 手动切换
@@ -211,7 +211,7 @@ proxy-groups:
   - name: Google
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - 手动切换
       - 自动选择
@@ -219,13 +219,13 @@ proxy-groups:
   - name: 国内媒体
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - DIRECT
   - name: 本地直连
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - DIRECT
       - 节点选择
@@ -233,143 +233,290 @@ proxy-groups:
   - name: 漏网之鱼
     type: select
     use:
-      - qejbhyctub_provider
+      - clash_meta_provider
     proxies:
       - DIRECT
       - 节点选择
       - 手动切换
       - 自动选择
+
 rule-providers:
-  lan:
-    type: http
-    behavior: classical
-    interval: 86400
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
-    path: ./Rules/lan.yaml
-  reject:
-    type: http
-    behavior: domain
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt
-    path: ./ruleset/reject.yaml
-    interval: 86400
-  proxy:
-    type: http
-    behavior: domain
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt
-    path: ./ruleset/proxy.yaml
-    interval: 86400
-  direct:
-    type: http
-    behavior: domain
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt
-    path: ./ruleset/direct.yaml
-    interval: 86400
-  private:
-    type: http
-    behavior: domain
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt
-    path: ./ruleset/private.yaml
-    interval: 86400
-  gfw:
-    type: http
-    behavior: domain
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt
-    path: ./ruleset/gfw.yaml
-    interval: 86400
-  greatfire:
-    type: http
-    behavior: domain
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/greatfire.txt
-    path: ./ruleset/greatfire.yaml
-    interval: 86400
-  tld-not-cn:
-    type: http
-    behavior: domain
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt
-    path: ./ruleset/tld-not-cn.yaml
-    interval: 86400
-  telegramcidr:
-    type: http
-    behavior: ipcidr
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt
-    path: ./ruleset/telegramcidr.yaml
-    interval: 86400
-  applications:
-    type: http
-    behavior: classical
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt
-    path: ./ruleset/applications.yaml
-    interval: 86400
-  Disney:
-    type: http
-    behavior: classical
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml
-    path: ./ruleset/disney.yaml
-    interval: 86400
-  Netflix:
-    type: http
-    behavior: classical
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
-    path: ./ruleset/netflix.yaml
-    interval: 86400
-  YouTube:
-    type: http
-    behavior: classical
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
-    path: ./ruleset/youtube.yaml
-    interval: 86400
-  HBO:
-    type: http
-    behavior: classical
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.yaml
-    path: ./ruleset/hbo.yaml
-    interval: 86400
-  OpenAI:
-    type: http
-    behavior: classical
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
-    path: ./ruleset/openai.yaml
-    interval: 86400
-  Bing:
-    type: http
-    behavior: classical
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml
-    path: ./ruleset/bing.yaml
-    interval: 86400
-  Google:
-    type: http
-    behavior: classical
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
-    path: ./ruleset/google.yaml
-    interval: 86400
-  GitHub:
-    type: http
-    behavior: classical
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
-    path: ./ruleset/github.yaml
-    interval: 86400
-  Spotify:
-    type: http
-    behavior: classical
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
-    path: ./ruleset/spotify.yaml
-    interval: 86400
-  ChinaMaxDomain:
-    type: http
-    behavior: domain
-    interval: 86400
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Domain.yaml
-    path: ./Rules/ChinaMaxDomain.yaml
-  ChinaMaxIPNoIPv6:
-    type: http
-    behavior: ipcidr
-    interval: 86400
-    url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_IP_No_IPv6.yaml
-    path: ./Rules/ChinaMaxIPNoIPv6.yaml
+  - 👨‍💻 GitHub:
+      type: http
+      behavior: classical
+      path: ./ruleset/GitHub.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
+      interval: 86400
+
+  - 🎯 国内流量:
+      type: http
+      behavior: domain
+      path: "./ruleset/Inside.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/Inside.list
+      interval: 86400
+
+  - 🚀 国外流量:
+      type: http
+      behavior: domain
+      path: "./Outside.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/Outside.list
+      interval: 86400
+
+  - 🧚 ChatGPT:
+      type: http
+      behavior: domain
+      path: ./ruleset/ChatGPT.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/ChatGPT.list
+      interval: 86400
+
+  - 🧚 ChatGPT:
+      type: http
+      behavior: classical
+      path: ./ruleset/OpenAI.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
+      interval: 86400
+
+  - 🎯 国内流量:
+      type: http
+      behavior: classical
+      path: "./Lan.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
+      interval: 86400
+
+  - 🎯 国内流量:
+      type: http
+      behavior: domain
+      path: "./UnBan.yaml"
+      url: //github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+      interval: 86400
+
+  - 🚀 国外流量:
+      type: http
+      behavior: classical
+      path: "./PikPak.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PikPak/PikPak.yaml
+      interval: 86400
+
+  - 🛸 IP归属地伪装:
+      type: http
+      behavior: classical
+      path: "./ruleset/rule-provider.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/lwd-temp/anti-ip-attribution/main/generated/rule-provider.yaml
+      interval: 86400
+
+  - 🛑 广告拦截:
+      type: http
+      behavior: classical
+      path: "./ZhihuAds.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ZhihuAds/ZhihuAds.yaml
+      interval: 86400
+
+  - 📹 YouTube:
+      type: http
+      behavior: classical
+      path: ./ruleset/YouTube.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+      interval: 86400
+
+  - 🎥 Netflix:
+      type: http
+      behavior: classical
+      path: ./ruleset/Netflix.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
+      interval: 86400
+
+  - 🐹 DisneyPlus:
+      type: http
+      behavior: classical
+      path: ./ruleset/DisneyPlus.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml
+      interval: 86400
+
+  - 📽️ PrimeVideo:
+      type: http
+      behavior: classical
+      path: ./ruleset/PrimeVideo.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonPrimeVideo/AmazonPrimeVideo.yaml
+      interval: 86400
+
+  - 🎦 HBOGO:
+      type: http
+      behavior: classical
+      path: ./ruleset/HBOHK.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBOHK/HBOHK.yaml
+      interval: 86400
+
+  - 🎦 HBOGO:
+      type: http
+      behavior: classical
+      path: ./ruleset/HBOAsia.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBOAsia/HBOAsia.yaml
+      interval: 86400
+
+  - 🎦 HBOMAX:
+      type: http
+      behavior: classical
+      path: ./ruleset/HBOUSA.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBOUSA/HBOUSA.yaml
+      interval: 86400
+
+  - 🍎 AppleTV:
+      type: http
+      behavior: classical
+      path: ./ruleset/AppleTV.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleTV/AppleTV.yaml
+      interval: 86400
+
+  - 🎬 EMBY:
+      type: http
+      behavior: classical
+      path: ./ruleset/EMBY.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/Emby.yaml
+      interval: 86400
+
+  - 🎬 EMBY:
+      type: http
+      behavior: classical
+      path: ./ruleset/Emby.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Emby/Emby.yaml
+      interval: 86400
+
+  - 📺 巴哈姆特:
+      type: http
+      behavior: classical
+      path: "./ruleset/Bahamut.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bahamut/Bahamut.yaml
+      interval: 86400
+
+  - 📺 Bilibili:
+      type: http
+      behavior: domain
+      path: ./ruleset/BilibiliHMT.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
+      interval: 86400
+
+  - 📺 Bilibili:
+      type: http
+      behavior: domain
+      path: ./ruleset/Bilibili.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
+      interval: 86400
+
+  - 🎵 Spotify:
+      type: http
+      behavior: classical
+      path: ./ruleset/Spotify.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
+      interval: 86400
+
+  - 🎶 TikTok:
+      type: http
+      behavior: classical
+      path: ./ruleset/TikTok.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
+      interval: 86400
+
+  - 🌍 国外媒体:
+      type: http
+      behavior: classical
+      path: "./ruleset/GlobalMedia_Classical.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
+      interval: 86400
+
+  - 🌏 国内媒体:
+      type: http
+      behavior: classical
+      path: "./ruleset/ChinaMedia.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+      interval: 86400
+
+  - 📢 谷歌FCM:
+      type: http
+      behavior: domain
+      path: "./ruleset/GoogleFCM.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+      interval: 86400
+
+  - 🎯 国内流量:
+      type: http
+      behavior: domain
+      path: "./ruleset/GoogleCN.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+      interval: 86400
+
+  - Ⓜ️ 微软云盘:
+      type: http
+      behavior: classical
+      path: "./ruleset/OneDrive.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.yaml
+      interval: 86400
+
+  - Ⓜ️ 微软服务:
+      type: http
+      behavior: classical
+      path: "./ruleset/Microsoft.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+      interval: 86400
+
+  - 🍎 苹果服务:
+      type: http
+      behavior: classical
+      path: "./ruleset/Apple.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml
+      interval: 86400
+
+  - 📲 Telegram:
+      type: http
+      behavior: classical
+      path: ./ruleset/Telegram.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+      interval: 86400
+
+  - 🤖 Discord:
+      type: http
+      behavior: classical
+      path: ./ruleset/Discord.yaml
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord.yaml
+      interval: 86400
+
+  - 🎮 游戏平台:
+      type: http
+      behavior: classical
+      path: "./ruleset/Game.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml
+      interval: 86400
+
+  - 🚀 国外流量:
+      type: http
+      behavior: domain
+      path: "./ruleset/ProxyGFWlist.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+      interval: 86400
+
+  - 🎯 国内流量:
+      type: http
+      behavior: domain
+      path: "./ruleset/ChinaDomain.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+      interval: 86400
+
+  - 🎯 国内流量:
+      type: http
+      behavior: domain
+      path: "./ruleset/ChinaCompanyIp.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+      interval: 86400
+
+  - 🎯 国内流量:
+      type: http
+      behavior: domain
+      path: "./ruleset/Download.yaml"
+      url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+      interval: 86400
 rules:
-  - RULE-SET,YouTube,YouTube,no-resolve
-  - RULE-SET,Google,Google,no-resolve
-  - RULE-SET,GitHub,GitHub
+  - RULE-SET,👨‍💻 GitHub,👨‍💻 GitHub
+  - RULE-SET,🎯 国内流量,🎯 国内流量
+  - RULE-SET,🧚 ChatGPT,🧚 ChatGPT
   - RULE-SET,telegramcidr,Telegram,no-resolve
   - RULE-SET,Spotify,Spotify,no-resolve
   - RULE-SET,Netflix,Netflix
