@@ -84,7 +84,7 @@ proxy-groups:
       - 🔮 负载均衡
       - DIRECT
 
-  - name: 流媒体
+  - name: 📹 流媒体
     type: select
     use:
       - juanshen_provider
@@ -160,7 +160,7 @@ proxy-groups:
     use:
       - juanshen_provider
     proxies:
-      - 流媒体
+      - 📹 流媒体
       - 🛩️ 节点选择
       - ♻️ 自动选择
   - name: 🎦 HBOGO
@@ -168,7 +168,7 @@ proxy-groups:
     use:
       - juanshen_provider
     proxies:
-      - 流媒体
+      - 📹 流媒体
       - 🛩️ 节点选择
       - ♻️ 自动选择
   - name: 🧚 Bing
@@ -190,7 +190,7 @@ proxy-groups:
     use:
       - juanshen_provider
     proxies:
-      - 流媒体
+      - 📹 流媒体
       - 🛩️ 节点选择
       - ♻️ 自动选择
   - name: 👨‍💻 GitHub
@@ -206,7 +206,7 @@ proxy-groups:
     use:
       - juanshen_provider
     proxies:
-      - 流媒体
+      - 📹 流媒体
       - ✈️ 手动选择
       - ♻️ 自动选择
       - DIRECT
