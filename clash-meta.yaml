@@ -5,6 +5,7 @@ tcp-concurrent: false
 find-process-mode: strict
 global-client-fingerprint: chrome
 
+
 allow-lan: true
 mode: rule
 log-level: info
