@@ -83,7 +83,7 @@ proxy-groups:
       - 🔮 负载均衡
       - DIRECT
 
-  - name: 流媒体
+  - name: 📽️ 流媒体
     type: select
     use:
       - juanshen_provider
@@ -93,11 +93,13 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - DIRECT
+
   - name: ✈️ 手动选择
     type: select
     use:
       - juanshen_provider
     proxies: null
+
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -106,6 +108,7 @@ proxy-groups:
     use:
       - juanshen_provider
     proxies: null
+
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -115,6 +118,7 @@ proxy-groups:
       - juanshen_provider
     proxies:
       - ♻️ 自动选择
+
   - name: 🔮 负载均衡
     type: load-balance
     url: http://www.gstatic.com/generate_204
@@ -123,14 +127,16 @@ proxy-groups:
     use:
       - juanshen_provider
     proxies: null
-  - name: 全球代理
+
+  - name: 🌏 全球代理
     type: select
     use:
       - juanshen_provider
     proxies:
       - ✈️ 手动选择
       - ♻️ 自动选择
-  - name: DNS_Proxy
+
+  - name: 🚀DNS_Proxy
     type: select
     use:
       - juanshen_provider
@@ -139,7 +145,7 @@ proxy-groups:
       - 🛩️ 节点选择
       - DIRECT
 
-  - name: Telegram
+  - name: 📲 Telegram
     type: select
     use:
       - juanshen_provider
@@ -147,14 +153,15 @@ proxy-groups:
       - ✈️ 手动选择
       - ♻️ 自动选择
 
-  - name: YouTube
+  - name: 📹 YouTube
     type: select
     use:
       - juanshen_provider
     proxies:
       - ✈️ 手动选择
       - ♻️ 自动选择
-  - name: Netflix
+
+  - name: 🎥 Netflix
     type: select
     use:
       - juanshen_provider
@@ -162,7 +169,8 @@ proxy-groups:
       - 流媒体
       - 🛩️ 节点选择
       - ♻️ 自动选择
-  - name: HBO
+
+  - name: 🎦 HBOGO
     type: select
     use:
       - juanshen_provider
@@ -170,21 +178,24 @@ proxy-groups:
       - 流媒体
       - 🛩️ 节点选择
       - ♻️ 自动选择
-  - name: Bing
+
+  - name: 🧚 Bing
     type: select
     use:
       - juanshen_provider
     proxies:
       - 🛩️ 节点选择
       - ♻️ 自动选择
-  - name: OpenAI
+
+  - name: 🤖 GPT
     type: select
     use:
       - juanshen_provider
     proxies:
       - 🛩️ 节点选择
       - ♻️ 自动选择
-  - name: Disney
+
+  - name: 🐹 Disney
     type: select
     use:
       - juanshen_provider
@@ -369,19 +380,20 @@ rule-providers:
     interval: 86400
     url: https://github.juanshen.eu.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_IP_No_IPv6.yaml
     path: ./Rules/ChinaMaxIPNoIPv6.yaml
+
 rules:
-  - RULE-SET,YouTube,YouTube,no-resolve
+  - RULE-SET,YouTube,📹 YouTube,no-resolve
   - RULE-SET,Google,Google,no-resolve
   - RULE-SET,GitHub,GitHub
-  - RULE-SET,telegramcidr,Telegram,no-resolve
+  - RULE-SET,telegramcidr,📲 Telegram,no-resolve
   - RULE-SET,Spotify,Spotify,no-resolve
-  - RULE-SET,Netflix,Netflix
-  - RULE-SET,HBO,HBO
-  - RULE-SET,Bing,Bing
-  - RULE-SET,OpenAI,OpenAI
-  - RULE-SET,Disney,Disney
-  - RULE-SET,proxy,全球代理
-  - RULE-SET,gfw,全球代理
+  - RULE-SET,Netflix,🎥 Netflix
+  - RULE-SET,HBO,🎦 HBOGO
+  - RULE-SET,Bing,🧚 Bing
+  - RULE-SET,OpenAI,🤖 GPT
+  - RULE-SET,Disney,🐹 Disney
+  - RULE-SET,proxy,🌏 全球代理
+  - RULE-SET,gfw,🌏 全球代理
   - RULE-SET,applications,本地直连
   - RULE-SET,ChinaMaxDomain,本地直连
   - RULE-SET,ChinaMaxIPNoIPv6,本地直连,no-resolve
