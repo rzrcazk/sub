@@ -78,7 +78,7 @@ proxy-groups:
     use:
       - juanshen_provider
     proxies:
-      - "cf-cdn-80"
+      - 'cf-cdn-80'
 
   - name: 🛩️ 节点选择
     type: select
