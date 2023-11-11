@@ -80,31 +80,7 @@ proxy-groups:
     proxies:
       - ✈️ 手动选择
       - cf-cdn-80
-      - cf-cdn-8080
-      - cf-cdn-8880
-      - cf-cdn-2052
-      - cf-cdn-2082
-      - cf-cdn-2086
-      - cf-cdn-2095
-      - cf-80
-      - cf-8080
-      - cf-8880
-      - cf-2052
-      - cf-2082
-      - cf-2086
-      - cf-2095
-      - cf-cdn-443
-      - cf-cdn-8443
-      - cf-cdn-2053
-      - cf-cdn-2083
-      - cf-cdn-2087
-      - cf-cdn-2096
-      - cf-443
-      - cf-8443
-      - cf-2053
-      - cf-2083
-      - cf-2087
-      - cf-2096
+
   - name: 🛩️ 节点选择
     type: select
     use:
