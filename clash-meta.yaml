@@ -79,7 +79,6 @@ proxy-groups:
       - juanshen_provider
     proxies:
       - ✈️ 手动选择
-      - cf-cdn-80
 
   - name: 🛩️ 节点选择
     type: select
@@ -102,6 +101,7 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - DIRECT
+
   - name: ✈️ 手动选择
     type: select
     use:
