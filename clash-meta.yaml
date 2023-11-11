@@ -163,7 +163,7 @@ proxy-groups:
       - 流媒体
       - 🛩️ 节点选择
       - ♻️ 自动选择
-  - name: HBO
+  - name: 🎦 HBOGO
     type: select
     use:
       - juanshen_provider
@@ -171,21 +171,21 @@ proxy-groups:
       - 流媒体
       - 🛩️ 节点选择
       - ♻️ 自动选择
-  - name: Bing
+  - name: 🧚 Bing
     type: select
     use:
       - juanshen_provider
     proxies:
       - 🛩️ 节点选择
       - ♻️ 自动选择
-  - name: OpenAI
+  - name: 🤖 GPT
     type: select
     use:
       - juanshen_provider
     proxies:
       - 🛩️ 节点选择
       - ♻️ 自动选择
-  - name: Disney
+  - name: 🐹 Disney
     type: select
     use:
       - juanshen_provider
@@ -377,10 +377,10 @@ rules:
   - RULE-SET,telegramcidr,Telegram,no-resolve
   - RULE-SET,Spotify,Spotify,no-resolve
   - RULE-SET,Netflix,Netflix
-  - RULE-SET,HBO,HBO
-  - RULE-SET,Bing,Bing
-  - RULE-SET,OpenAI,OpenAI
-  - RULE-SET,Disney,Disney
+  - RULE-SET,HBO,🎦 HBOGO
+  - RULE-SET,Bing,🧚 Bing
+  - RULE-SET,OpenAI,🤖 GPT
+  - RULE-SET,Disney,🐹 Disney
   - RULE-SET,proxy,🌏 全球代理
   - RULE-SET,gfw,🌏 全球代理
   - RULE-SET,applications,🚀 国内流量
