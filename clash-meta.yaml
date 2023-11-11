@@ -124,7 +124,7 @@ proxy-groups:
     use:
       - juanshen_provider
     proxies: null
-  - name: 全球代理
+  - name: 🌏 全球代理
     type: select
     use:
       - juanshen_provider
@@ -381,8 +381,8 @@ rules:
   - RULE-SET,Bing,Bing
   - RULE-SET,OpenAI,OpenAI
   - RULE-SET,Disney,Disney
-  - RULE-SET,proxy,全球代理
-  - RULE-SET,gfw,全球代理
+  - RULE-SET,proxy,🌏 全球代理
+  - RULE-SET,gfw,🌏 全球代理
   - RULE-SET,applications,🚀 国内流量
   - RULE-SET,ChinaMaxDomain,🚀 国内流量
   - RULE-SET,ChinaMaxIPNoIPv6,🚀 国内流量,no-resolve
