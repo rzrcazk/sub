@@ -140,7 +140,7 @@ proxy-groups:
       - 🛩️ 节点选择
       - DIRECT
 
-  - name: Telegram
+  - name: 📲 Telegram
     type: select
     use:
       - juanshen_provider
@@ -155,7 +155,7 @@ proxy-groups:
     proxies:
       - ✈️ 手动选择
       - ♻️ 自动选择
-  - name: Netflix
+  - name: 🎥 Netflix
     type: select
     use:
       - juanshen_provider
@@ -374,9 +374,9 @@ rules:
   - RULE-SET,YouTube,YouTube,no-resolve
   - RULE-SET,Google,Google,no-resolve
   - RULE-SET,GitHub,GitHub
-  - RULE-SET,telegramcidr,Telegram,no-resolve
+  - RULE-SET,telegramcidr,📲 Telegram,no-resolve
   - RULE-SET,Spotify,Spotify,no-resolve
-  - RULE-SET,Netflix,Netflix
+  - RULE-SET,Netflix,🎥 Netflix
   - RULE-SET,HBO,🎦 HBOGO
   - RULE-SET,Bing,🧚 Bing
   - RULE-SET,OpenAI,🤖 GPT
