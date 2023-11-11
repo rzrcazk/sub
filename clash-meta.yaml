@@ -105,7 +105,6 @@ proxy-groups:
       - cf-2083
       - cf-2087
       - cf-2096
-
   - name: 🛩️ 节点选择
     type: select
     use:
