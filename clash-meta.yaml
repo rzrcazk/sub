@@ -73,13 +73,6 @@ proxy-providers:
       interval: 300
 
 proxy-groups:
-  - name: 🚁 自建节点
-    type: select
-    use:
-      - juanshen_provider
-    proxies:
-      null
-
   - name: 🛩️ 节点选择
     type: select
     use:
