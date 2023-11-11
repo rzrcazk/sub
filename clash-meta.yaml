@@ -203,6 +203,7 @@ proxy-groups:
       - 流媒体
       - 🛩️ 节点选择
       - ♻️ 自动选择
+
   - name: GitHub
     type: select
     use:
@@ -211,6 +212,7 @@ proxy-groups:
       - ✈️ 手动选择
       - ♻️ 自动选择
       - DIRECT
+
   - name: Spotify
     type: select
     use:
@@ -220,6 +222,7 @@ proxy-groups:
       - ✈️ 手动选择
       - ♻️ 自动选择
       - DIRECT
+
   - name: Google
     type: select
     use:
@@ -228,13 +231,15 @@ proxy-groups:
       - ✈️ 手动选择
       - ♻️ 自动选择
       - DIRECT
+
   - name: 国内媒体
     type: select
     use:
       - juanshen_provider
     proxies:
       - DIRECT
-  - name: 本地直连
+
+  - name: 🚀 国外流量
     type: select
     use:
       - juanshen_provider
@@ -394,9 +399,9 @@ rules:
   - RULE-SET,Disney,🐹 Disney
   - RULE-SET,proxy,🌏 全球代理
   - RULE-SET,gfw,🌏 全球代理
-  - RULE-SET,applications,本地直连
-  - RULE-SET,ChinaMaxDomain,本地直连
-  - RULE-SET,ChinaMaxIPNoIPv6,本地直连,no-resolve
-  - RULE-SET,lan,本地直连,no-resolve
-  - GEOIP,CN,本地直连
+  - RULE-SET,applications,🚀 国外流量
+  - RULE-SET,ChinaMaxDomain,🚀 国外流量
+  - RULE-SET,ChinaMaxIPNoIPv6,🚀 国外流量,no-resolve
+  - RULE-SET,lan,🚀 国外流量,no-resolve
+  - GEOIP,CN,🚀 国外流量
   - MATCH,🐟 漏网之鱼
