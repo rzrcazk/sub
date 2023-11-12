@@ -1,4 +1,56 @@
 proxies:
+  - name: 🇸🇬 aws-reality-vision节点
+    type: vless
+    server: 18.136.213.142
+    port: 57523
+    uuid: a0244102-11ed-4f64-9076-af32abd701d5
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com
+    reality-opts:
+      public-key: liNBTKG-TgY_69vOBbcqBZgRY4MQJp-NOZjPOUwwSBo
+      short-id: bbc5a3bc
+    client-fingerprint: chrome
+  - name: 🇸🇬 aws-vmess-ws节点
+    type: vmess
+    server: 18.136.213.142
+    port: 2095
+    uuid: a0244102-11ed-4f64-9076-af32abd701d5
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: www.bing.com
+    ws-opts:
+      path: "a0244102-11ed-4f64-9076-af32abd701d5-vm"
+      headers:
+        Host: www.bing.com
+  - name: 🇸🇬 aws-hysteria2节点
+    type: hysteria2
+    server: 18.136.213.142
+    port: 3288
+    password: a0244102-11ed-4f64-9076-af32abd701d5
+    alpn:
+      - h3
+    sni: www.bing.com
+    skip-cert-verify: true
+    fast-open: true
+  - name: 🇸🇬 aws-tuic5节点
+    server: 18.136.213.142
+    port: 60651
+    type: tuic
+    uuid: a0244102-11ed-4f64-9076-af32abd701d5
+    password: a0244102-11ed-4f64-9076-af32abd701d5
+    alpn: [h3]
+    disable-sni: true
+    reduce-rtt: true
+    udp-relay-mode: native
+    congestion-controller: bbr
+    sni: www.bing.com
+    skip-cert-verify: true
   - client-fingerprint: random
     name: 🇯🇵 CF-JP-443
     network: ws
