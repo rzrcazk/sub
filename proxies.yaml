@@ -1,353 +1,327 @@
-- name: cf-cdn-80
+- name: 🇯🇵 CF-JP-80
   network: ws
   port: 80
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-jp.juanshen.eu.org
+  servername: jp.juanshen.eu.org
   tls: false
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: jp.juanshen.eu.org
     path: /?ed=2048
-- name: cf-cdn-8080
+- name: 🇯🇵 CF-JP-8080
   network: ws
   port: 8080
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-jp.juanshen.eu.org
+  servername: jp.juanshen.eu.org
   tls: false
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: jp.juanshen.eu.org
     path: /?ed=2048
-- name: cf-cdn-8880
+- name: 🇯🇵 CF-JP-8880
   network: ws
   port: 8880
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-jp.juanshen.eu.org
+  servername: jp.juanshen.eu.org
   tls: false
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: jp.juanshen.eu.org
     path: /?ed=2048
-- name: cf-cdn-2052
+- name: 🇯🇵 CF-JP-2052
   network: ws
   port: 2052
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-jp.juanshen.eu.org
+  servername: jp.juanshen.eu.org
   tls: false
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: jp.juanshen.eu.org
     path: /?ed=2048
-- name: cf-cdn-2082
+- name: 🇯🇵 CF-JP-2082
   network: ws
   port: 2082
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-jp.juanshen.eu.org
+  servername: jp.juanshen.eu.org
   tls: false
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: jp.juanshen.eu.org
     path: /?ed=2048
-- name: cf-cdn-2086
+- name: 🇯🇵 CF-JP-2086
   network: ws
   port: 2086
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-jp.juanshen.eu.org
+  servername: jp.juanshen.eu.org
   tls: false
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: jp.juanshen.eu.org
     path: /?ed=2048
-- name: cf-cdn-2095
+- name: 🇯🇵 CF-JP-2095
   network: ws
   port: 2095
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-jp.juanshen.eu.org
+  servername: jp.juanshen.eu.org
   tls: false
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: jp.juanshen.eu.org
     path: /?ed=2048
-- name: cf-80
+- client-fingerprint: random
+  name: 🇯🇵 CF-JP-443
+  network: ws
+  port: 443
+  server: cf-jp.juanshen.eu.org
+  servername: jp.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: jp.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: 🇯🇵 CF-JP-8443
+  network: ws
+  port: 8443
+  server: cf-jp.juanshen.eu.org
+  servername: jp.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: jp.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: 🇯🇵 CF-JP-2053
+  network: ws
+  port: 2053
+  server: cf-jp.juanshen.eu.org
+  servername: jp.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: jp.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: 🇯🇵 CF-JP-2083
+  network: ws
+  port: 2083
+  server: cf-jp.juanshen.eu.org
+  servername: jp.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: jp.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: 🇯🇵 CF-JP-2087
+  network: ws
+  port: 2087
+  server: cf-jp.juanshen.eu.org
+  servername: jp.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: jp.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: 🇯🇵 CF-JP-2096
+  network: ws
+  port: 2096
+  server: cf-jp.juanshen.eu.org
+  servername: jp.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: jp.juanshen.eu.org
+    path: /?ed=2048
+- name: 🇸🇬 CF-SG-80
   network: ws
   port: 80
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-sg.juanshen.eu.org
+  servername: sg.juanshen.eu.org
   tls: false
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: sg.juanshen.eu.org
     path: /?ed=2048
-- name: cf-8080
+- name: 🇸🇬 CF-SG-8080
   network: ws
   port: 8080
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-sg.juanshen.eu.org
+  servername: sg.juanshen.eu.org
   tls: false
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: sg.juanshen.eu.org
     path: /?ed=2048
-- name: cf-8880
+- name: 🇸🇬 CF-SG-8880
   network: ws
   port: 8880
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-sg.juanshen.eu.org
+  servername: sg.juanshen.eu.org
   tls: false
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: sg.juanshen.eu.org
     path: /?ed=2048
-- name: cf-2052
+- name: 🇸🇬 CF-SG-2052
   network: ws
   port: 2052
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-sg.juanshen.eu.org
+  servername: sg.juanshen.eu.org
   tls: false
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: sg.juanshen.eu.org
     path: /?ed=2048
-- name: cf-2082
+- name: 🇸🇬 CF-SG-2082
   network: ws
   port: 2082
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-sg.juanshen.eu.org
+  servername: sg.juanshen.eu.org
   tls: false
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: sg.juanshen.eu.org
     path: /?ed=2048
-- name: cf-2086
+- name: 🇸🇬 CF-SG-2086
   network: ws
   port: 2086
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-sg.juanshen.eu.org
+  servername: sg.juanshen.eu.org
   tls: false
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: sg.juanshen.eu.org
     path: /?ed=2048
-- name: cf-2095
+- name: 🇸🇬 CF-SG-2095
   network: ws
   port: 2095
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-sg.juanshen.eu.org
+  servername: sg.juanshen.eu.org
   tls: false
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: sg.juanshen.eu.org
     path: /?ed=2048
 - client-fingerprint: random
-  name: cf-cdn-443
+  name: 🇸🇬 CF-SG-443
   network: ws
   port: 443
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-sg.juanshen.eu.org
+  servername: sg.juanshen.eu.org
   tls: true
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: sg.juanshen.eu.org
     path: /?ed=2048
 - client-fingerprint: random
-  name: cf-cdn-8443
+  name: 🇸🇬 CF-SG-8443
   network: ws
   port: 8443
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-sg.juanshen.eu.org
+  servername: sg.juanshen.eu.org
   tls: true
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: sg.juanshen.eu.org
     path: /?ed=2048
 - client-fingerprint: random
-  name: cf-cdn-2053
+  name: 🇸🇬 CF-SG-2053
   network: ws
   port: 2053
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-sg.juanshen.eu.org
+  servername: sg.juanshen.eu.org
   tls: true
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: sg.juanshen.eu.org
     path: /?ed=2048
 - client-fingerprint: random
-  name: cf-cdn-2083
+  name: 🇸🇬 CF-SG-2083
   network: ws
   port: 2083
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-sg.juanshen.eu.org
+  servername: sg.juanshen.eu.org
   tls: true
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: sg.juanshen.eu.org
     path: /?ed=2048
 - client-fingerprint: random
-  name: cf-cdn-2087
+  name: 🇸🇬 CF-SG-2087
   network: ws
   port: 2087
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-sg.juanshen.eu.org
+  servername: sg.juanshen.eu.org
   tls: true
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: sg.juanshen.eu.org
     path: /?ed=2048
 - client-fingerprint: random
-  name: cf-cdn-2096
+  name: 🇸🇬 CF-SG-2096
   network: ws
   port: 2096
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
+  server: cf-sg.juanshen.eu.org
+  servername: sg.juanshen.eu.org
   tls: true
   type: vless
   uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
   ws-opts:
     headers:
-      host: cf.juanshen.eu.org
+      host: sg.juanshen.eu.org
     path: /?ed=2048
-- client-fingerprint: random
-  name: cf-443
-  network: ws
-  port: 443
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-8443
-  network: ws
-  port: 8443
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-2053
-  network: ws
-  port: 2053
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-2083
-  network: ws
-  port: 2083
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-2087
-  network: ws
-  port: 2087
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-2096
-  network: ws
-  port: 2096
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- alpn:
-  - http/1.1
-  - h2
-  name: aws-sgp-443
-  network: ws
-  port: 443
-  server: aws-sgp.juanshen.eu.org
-  servername: aws-sgp.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 54f0a6fa-726b-40a3-8325-9c82c82293b6
-  ws-opts:
-    path: /abcd
-- alpn:
-  - http/1.1
-  - h2
-  name: aws-sgp-8443
-  network: ws
-  port: 8443
-  server: aws-sgp.juanshen.eu.org
-  servername: aws-sgp.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 54f0a6fa-726b-40a3-8325-9c82c82293b6
-  ws-opts:
-    path: /abcd
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: GLaDOS-B1-01
