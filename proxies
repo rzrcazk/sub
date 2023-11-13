@@ -2,111 +2,32 @@ proxies:
   - alterId: 0
     cipher: auto
     client-fingerprint: chrome
-    name: aws-vm-argo-443
+    name: aws-vmess
     network: ws
+    port: 8080
+    server: aws.juanshen.eu.org
+    skip-cert-verify: true
+    tfo: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: fbfae0fd-6429-41fc-f464-f31d78548dad
+    ws-opts:
+      headers:
+        Host: cf-cdn.juanshen.eu.org
+      path: /fbfae0fd
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    name: aws-vision
     port: 443
-    server: cf-cdn.juanshen.eu.org
-    servername: correspondence-canvas-announce-fuel.trycloudflare.com
+    server: aws.juanshen.eu.org
+    servername: aws.juanshen.eu.org
     skip-cert-verify: true
     tfo: false
     tls: true
-    type: vmess
+    type: vless
     udp: true
-    uuid: 7706236e-1ac6-43c6-8bea-eafa1fff51a4
-    ws-opts:
-      headers:
-        Host: correspondence-canvas-announce-fuel.trycloudflare.com
-      path: 7706236e-1ac6-43c6-8bea-eafa1fff51a4-vm
-  - alterId: 0
-    cipher: auto
-    client-fingerprint: chrome
-    name: aws-vm-argo-8443
-    network: ws
-    port: 8443
-    server: cf-cdn.juanshen.eu.org
-    servername: correspondence-canvas-announce-fuel.trycloudflare.com
-    skip-cert-verify: true
-    tfo: false
-    tls: true
-    type: vmess
-    udp: true
-    uuid: 7706236e-1ac6-43c6-8bea-eafa1fff51a4
-    ws-opts:
-      headers:
-        Host: correspondence-canvas-announce-fuel.trycloudflare.com
-      path: 7706236e-1ac6-43c6-8bea-eafa1fff51a4-vm
-  - alterId: 0
-    cipher: auto
-    client-fingerprint: chrome
-    name: aws-vm-argo-2053
-    network: ws
-    port: 2053
-    server: cf-cdn.juanshen.eu.org
-    servername: correspondence-canvas-announce-fuel.trycloudflare.com
-    skip-cert-verify: true
-    tfo: false
-    tls: true
-    type: vmess
-    udp: true
-    uuid: 7706236e-1ac6-43c6-8bea-eafa1fff51a4
-    ws-opts:
-      headers:
-        Host: correspondence-canvas-announce-fuel.trycloudflare.com
-      path: 7706236e-1ac6-43c6-8bea-eafa1fff51a4-vm
-  - alterId: 0
-    cipher: auto
-    client-fingerprint: chrome
-    name: aws-vm-argo-2083
-    network: ws
-    port: 2083
-    server: cf-cdn.juanshen.eu.org
-    servername: correspondence-canvas-announce-fuel.trycloudflare.com
-    skip-cert-verify: true
-    tfo: false
-    tls: true
-    type: vmess
-    udp: true
-    uuid: 7706236e-1ac6-43c6-8bea-eafa1fff51a4
-    ws-opts:
-      headers:
-        Host: correspondence-canvas-announce-fuel.trycloudflare.com
-      path: 7706236e-1ac6-43c6-8bea-eafa1fff51a4-vm
-  - alterId: 0
-    cipher: auto
-    client-fingerprint: chrome
-    name: aws-vm-argo-2087
-    network: ws
-    port: 2087
-    server: cf-cdn.juanshen.eu.org
-    servername: correspondence-canvas-announce-fuel.trycloudflare.com
-    skip-cert-verify: true
-    tfo: false
-    tls: true
-    type: vmess
-    udp: true
-    uuid: 7706236e-1ac6-43c6-8bea-eafa1fff51a4
-    ws-opts:
-      headers:
-        Host: correspondence-canvas-announce-fuel.trycloudflare.com
-      path: 7706236e-1ac6-43c6-8bea-eafa1fff51a4-vm
-  - alterId: 0
-    cipher: auto
-    client-fingerprint: chrome
-    name: aws-vm-argo-2096
-    network: ws
-    port: 2096
-    server: cf-cdn.juanshen.eu.org
-    servername: correspondence-canvas-announce-fuel.trycloudflare.com
-    skip-cert-verify: true
-    tfo: false
-    tls: true
-    type: vmess
-    udp: true
-    uuid: 7706236e-1ac6-43c6-8bea-eafa1fff51a4
-    ws-opts:
-      headers:
-        Host: correspondence-canvas-announce-fuel.trycloudflare.com
-      path: 7706236e-1ac6-43c6-8bea-eafa1fff51a4-vm
+    uuid: dec7d9e4-908b-4c6f-b18c-e199fceecdcd
   - client-fingerprint: random
     name: cf-vless-443
     network: ws
