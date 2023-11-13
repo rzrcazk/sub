@@ -1,56 +1,57 @@
 proxies:
-  - name: 🇸🇬 aws-reality-vision节点
+  - name: 🇯🇵 aws-vless-reality-vision
     type: vless
-    server: 18.136.213.142
-    port: 57523
-    uuid: a0244102-11ed-4f64-9076-af32abd701d5
+    server: cf-cdn.juanshen.eu.org
+    port: 48633
+    uuid: 7706236e-1ac6-43c6-8bea-eafa1fff51a4
     network: tcp
     udp: true
     tls: true
     flow: xtls-rprx-vision
     servername: www.yahoo.com
     reality-opts:
-      public-key: liNBTKG-TgY_69vOBbcqBZgRY4MQJp-NOZjPOUwwSBo
-      short-id: bbc5a3bc
+      public-key: L33A9MpXK9H90c3MB38KAHdfiENfW4YfYSvcFT14Lgc
+      short-id: a79fad2a
     client-fingerprint: chrome
-  - name: 🇸🇬 aws-vmess-ws节点
+  - name: 🇯🇵 aws-vmess
     type: vmess
-    server: 18.136.213.142
-    port: 2095
-    uuid: a0244102-11ed-4f64-9076-af32abd701d5
+    server: cf-cdn.juanshen.eu.org
+    port: 8080
+    uuid: 7706236e-1ac6-43c6-8bea-eafa1fff51a4
     alterId: 0
     cipher: auto
     udp: true
     tls: false
     network: ws
-    servername: www.bing.com
+    servername: aws.juanshen.eu.org
     ws-opts:
-      path: "a0244102-11ed-4f64-9076-af32abd701d5-vm"
+      path: "7706236e-1ac6-43c6-8bea-eafa1fff51a4-vm"
       headers:
-        Host: www.bing.com
-  - name: 🇸🇬 aws-hysteria2节点
+        Host: aws.juanshen.eu.org
+  - name: 🇯🇵 hysteria2
     type: hysteria2
-    server: 18.136.213.142
-    port: 3288
-    password: a0244102-11ed-4f64-9076-af32abd701d5
+    server: aws.juanshen.eu.org
+    port: 21610
+    password: 7706236e-1ac6-43c6-8bea-eafa1fff51a4
     alpn:
       - h3
-    sni: www.bing.com
-    skip-cert-verify: true
+    sni: aws.juanshen.eu.org
+    skip-cert-verify: false
     fast-open: true
-  - name: 🇸🇬 aws-tuic5节点
-    server: 18.136.213.142
-    port: 60651
+  - name: 🇯🇵 tuic5节点
+    server: aws.juanshen.eu.org
+    port: 13901
     type: tuic
-    uuid: a0244102-11ed-4f64-9076-af32abd701d5
-    password: a0244102-11ed-4f64-9076-af32abd701d5
+    uuid: 7706236e-1ac6-43c6-8bea-eafa1fff51a4
+    password: 7706236e-1ac6-43c6-8bea-eafa1fff51a4
     alpn: [h3]
     disable-sni: true
     reduce-rtt: true
     udp-relay-mode: native
     congestion-controller: bbr
-    sni: www.bing.com
-    skip-cert-verify: true
+    sni: aws.juanshen.eu.org
+    skip-cert-verify: false
+
   - client-fingerprint: random
     name: 🇯🇵 CF-JP-443
     network: ws
