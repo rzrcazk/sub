@@ -83,7 +83,7 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - DIRECT
-      -
+
   - name: 🛰️ 自建节点
     type: select
     proxies:
