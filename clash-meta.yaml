@@ -79,6 +79,7 @@ proxy-groups:
       - juanshen_provider
     proxies:
       - ✈️ 手动选择
+      - 🛰️ 自建节点
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
@@ -96,10 +97,10 @@ proxy-groups:
       - juanshen_provider
     proxies:
       - ✈️ 手动选择
+      - 🛰️ 自建节点
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-      - 🛰️ 自建节点
       - DIRECT
 
   - name: ✈️ 手动选择
@@ -136,6 +137,22 @@ proxy-groups:
       - juanshen_provider
     proxies: null
 
+  - name: 🌏 全球代理
+    type: select
+    use:
+      - juanshen_provider
+    proxies:
+      - ✈️ 手动选择
+      - ♻️ 自动选择
+
+  - name: DNS_Proxy
+    type: select
+    use:
+      - juanshen_provider
+    proxies:
+      - ♻️ 自动选择
+      - 🛩️ 节点选择
+      - DIRECT
 
   - name: 📲 Telegram
     type: select
@@ -143,7 +160,6 @@ proxy-groups:
       - juanshen_provider
     proxies:
       - ✈️ 手动选择
-      - 🛰️ 自建节点
       - ♻️ 自动选择
 
   - name: 📺 YouTube
@@ -152,35 +168,28 @@ proxy-groups:
       - juanshen_provider
     proxies:
       - ✈️ 手动选择
-      - 🛰️ 自建节点
       - ♻️ 自动选择
-
   - name: 🎥 Netflix
     type: select
     use:
       - juanshen_provider
     proxies:
-      - 🛰️ 自建节点
       - 📹 流媒体
       - 🛩️ 节点选择
       - ♻️ 自动选择
-
   - name: 🎦 HBOGO
     type: select
     use:
       - juanshen_provider
     proxies:
-      - 🛰️ 自建节点
       - 📹 流媒体
       - 🛩️ 节点选择
       - ♻️ 自动选择
-
   - name: 🧚 Bing
     type: select
     use:
       - juanshen_provider
     proxies:
-      - 🛰️ 自建节点
       - 🛩️ 节点选择
       - ♻️ 自动选择
 
@@ -189,6 +198,8 @@ proxy-groups:
     use:
       - juanshen_provider
     proxies:
+      - 🛩️ 节点选择
+      - ♻️ 自动选择
       - 🛰️ 自建节点
 
   - name: 🐹 Disney
@@ -196,49 +207,40 @@ proxy-groups:
     use:
       - juanshen_provider
     proxies:
-      - 🛰️ 自建节点
       - 📹 流媒体
       - 🛩️ 节点选择
       - ♻️ 自动选择
-
   - name: 👨‍💻 GitHub
     type: select
     use:
       - juanshen_provider
     proxies:
       - ✈️ 手动选择
-      - 🛰️ 自建节点
       - ♻️ 自动选择
       - DIRECT
-
   - name: 🎵 Spotify
     type: select
     use:
       - juanshen_provider
     proxies:
-      - 🛰️ 自建节点
       - 📹 流媒体
       - ✈️ 手动选择
       - ♻️ 自动选择
       - DIRECT
-
   - name: Google
     type: select
     use:
       - juanshen_provider
     proxies:
-      - 🛰️ 自建节点
       - ✈️ 手动选择
       - ♻️ 自动选择
       - DIRECT
-
   - name: 国内媒体
     type: select
     use:
       - juanshen_provider
     proxies:
       - DIRECT
-
   - name: 🚀 国内流量
     type: select
     use:
@@ -255,7 +257,6 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🛩️ 节点选择
-      - 🛰️ 自建节点
       - ✈️ 手动选择
       - ♻️ 自动选择
 
