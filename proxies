@@ -2,7 +2,7 @@ proxies:
   - name: 🇯🇵 aws-vless-reality-vision
     type: vless
     server: cf-cdn.juanshen.eu.org
-    port: 48633
+    port: 8633
     uuid: 7706236e-1ac6-43c6-8bea-eafa1fff51a4
     network: tcp
     udp: true
@@ -31,7 +31,7 @@ proxies:
   - name: 🇯🇵 hysteria2
     type: hysteria2
     server: aws.juanshen.eu.org
-    port: 21610
+    port: 8610
     password: 7706236e-1ac6-43c6-8bea-eafa1fff51a4
     alpn:
       - h3
@@ -40,7 +40,7 @@ proxies:
     fast-open: true
   - name: 🇯🇵 tuic5节点
     server: aws.juanshen.eu.org
-    port: 13901
+    port: 8710
     type: tuic
     uuid: 7706236e-1ac6-43c6-8bea-eafa1fff51a4
     password: 7706236e-1ac6-43c6-8bea-eafa1fff51a4
