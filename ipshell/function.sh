@@ -103,125 +103,72 @@ handle_optimized_ip_result() {
 
 
 
-
-# 函数：获取给定IP的国家代码
-
-get_country_code_by_ip() {
-    local ip=$1
-    local curl_cmd="curl -s --max-time 10 'http://ip-api.com/json/${ip}'"
-    echo "执行命令: $curl_cmd" # 打印完整的 curl 命令
-
-    local response=$(eval $curl_cmd)
-    local country_code=$(echo "$response" | jq -r '.countryCode')
-
-    if [ "$country_code" == "null" ] || [ -z "$country_code" ]; then
-        echo "Error: 无法获取有效的国家代码"
-        return 1
-    fi
-
-    echo $country_code
-    return 0
-}
-
-
-
-# 添加DNS记录的函数
-add_dns_record() {
-    local ip=$1
-    local record_name=$2
-    local data="{\"type\":\"A\",\"name\":\"$record_name\",\"content\":\"$ip\",\"ttl\":1,\"proxied\":false}"
-    local curl_cmd="curl -s -X POST 'https://api.cloudflare.com/client/v4/zones/$zone_id/dns_records' -H 'X-Auth-Email: $x_email' -H 'X-Auth-Key: $api_key' -H 'Content-Type: application/json' --data '$data'"
-
-    echo "执行命令: $curl_cmd" # 打印完整的 curl 命令
-
-    local response=$(eval $curl_cmd)
-    if [[ $(echo "$response" | jq -r '.success') == "true" ]]; then
-        echo "IP地址 $ip 成功解析到 ${record_name}.${domain}" >> informlog
-    else
-        echo "导入IP地址 $ip 失败" >> informlog
-    fi
-}
-
-
-
-# 删除所有与域名关联的DNS记录的函数
-delete_all_dns_records() {
-    local zone_id=$1
-    local record_name=$2
-
-    # 获取所有DNS记录的命令
-    local get_cmd="curl -s --max-time 5 -X GET 'https://api.cloudflare.com/client/v4/zones/$zone_id/dns_records?name=$record_name' -H 'X-Auth-Email: $x_email' -H 'X-Auth-Key: $api_key' -H 'Content-Type: application/json'"
-    echo "执行命令: $get_cmd" # 打印完整的获取命令
-
-    local records=$(eval $get_cmd)
-    if [ $? -ne 0 ] || [ -z "$records" ]; then
-        echo "Error: 获取DNS记录失败"
-        return 1
-    fi
-
-    # 遍历并删除每个DNS记录
-    echo "$records" | jq -c '.result[] | .id' | while read -r id; do
-        local delete_cmd="curl -s --max-time 5 -X DELETE 'https://api.cloudflare.com/client/v4/zones/$zone_id/dns_records/$id' -H 'X-Auth-Email: $x_email' -H 'X-Auth-Key: $api_key' -H 'Content-Type: application/json'"
-        echo "执行命令: $delete_cmd" # 打印完整的删除命令
-
-        local delete_response=$(eval $delete_cmd)
-        if [ $? -ne 0 ]; then
-            echo "Error: 删除DNS记录 $id 失败"
-        fi
-    done
-}
-
-
-# 函数：更新DNS记录
 update_dns_with_common_country_code() {
     local csv_file="/root/cfipopw/result.csv" # CSV文件路径
     local informlog_file='informlog'
     declare -A country_count=()
     declare -A ip_country=()
     declare -A unique_ips
-    local found_country_code=false
+
+    # 删除现有的所有DNS记录
+    url="https://api.cloudflare.com/client/v4/zones/$zone_id/dns_records"
+    params="name=${subdomain}.${domain}&type=A,AAAA"
+    response=$(curl -sm10 -X GET "$url?$params" -H "X-Auth-Email: $x_email" -H "X-Auth-Key: $api_key")
+    if [[ $(echo "$response" | jq -r '.success') == "true" ]]; then
+        records=$(echo "$response" | jq -r '.result')
+        if [[ $(echo "$records" | jq 'length') -gt 0 ]]; then
+            for record in $(echo "$records" | jq -c '.[]'); do
+                record_id=$(echo "$record" | jq -r '.id')
+                delete_url="$url/$record_id"
+                delete_response=$(curl -s -X DELETE "$delete_url" -H "X-Auth-Email: $x_email" -H "X-Auth-Key: $api_key")
+                if [[ $(echo "$delete_response" | jq -r '.success') == "true" ]]; then
+                    echo "成功删除 DNS 记录：$(echo "$record" | jq -r '.name')"
+                else
+                    echo "删除 DNS 记录失败"
+                fi
+            done
+        else
+            echo "没有找到指定的 DNS 记录"
+        fi
+    else
+        echo "获取 DNS 记录失败"
+    fi
 
     # 读取IP地址，并获取每个IP的国家代码
-    while IFS=, read -r ip rest; do
-        if [[ ! ${unique_ips[$ip]} ]]; then
-            unique_ips[$ip]=1
-            if [[ $ip =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ || $ip =~ ^[0-9a-fA-F:]+$ ]]; then # 检查IP格式
-                country_code=$(get_country_code_by_ip "$ip")
-                if [ $? -ne 0 ]; then
-                    echo "无法获取国家代码，将IP $ip 视为默认国家的一部分" >> "$informlog_file"
-                    country_code="DEFAULT"
-                else
-                    found_country_code=true
+    if [[ -f $csv_file ]]; then
+        ips=$(awk -F ',' 'NR > 1 {print $1}' "$csv_file")
+        for ip in $ips; do
+            if [[ ! ${unique_ips[$ip]} ]]; then
+                unique_ips[$ip]=1
+                # 获取国家代码
+                country_code=$(curl -s "http://ip-api.com/json/${ip}?fields=countryCode" | jq -r '.countryCode')
+                if [[ $country_code == "null" ]]; then
+                    echo "无法获取IP地址 $ip 的国家代码" >> "$informlog_file"
+                    country_code="UNKNOWN"
                 fi
+                echo "IP地址 $ip 的国家代码为 $country_code" >> "$informlog_file"
                 ((country_count[$country_code]++))
                 ip_country[$ip]=$country_code
             fi
-        fi
-    done < <(tail -n +2 $csv_file) # 跳过CSV的标题行
-
-    # 找出出现最多次的country_code或使用默认值
-    max_count=0
-    common_country_code=""
-    if [ "$found_country_code" = true ]; then
-        for country_code in "${!country_count[@]}"; do
-            if [[ "${country_count[$country_code]}" -gt "$max_count" ]]; then
-                max_count=${country_count[$country_code]}
-                common_country_code=$country_code
-            fi
         done
     else
-        common_country_code="DEFAULT"
+        echo "CSV文件 $csv_file 不存在"
     fi
-
-    echo '删除DNS记录开始'
-    # 删除现有DNS记录
-    delete_all_dns_records "$zone_id" "$x_email" "$api_key" "$subdomain.$domain"
-    echo '删除DNS记录结束'
 
     # 为最常见的country_code的IP地址创建DNS记录
     for ip in "${!ip_country[@]}"; do
-        echo "Adding DNS record for IP $ip with country code $common_country_code"
-        add_dns_record "$ip" "$subdomain.$domain" "$zone_id" "$x_email" "$api_key" "A"
+        if [[ "${ip_country[$ip]}" == "$common_country_code" || "${ip_country[$ip]}" == "UNKNOWN" ]]; then
+            echo "Adding DNS record for IP $ip with country code $common_country_code"
+            record_type="A" # 假定所有IP都是IPv4
+            data="{\"type\":\"$record_type\",\"name\":\"$subdomain.$domain\",\"content\":\"$ip\",\"ttl\":60,\"proxied\":false}"
+            response=$(curl -s -X POST "$url" -H "X-Auth-Email: $x_email" -H "X-Auth-Key: $api_key" -H "Content-Type: application/json" -d "$data")
+            if [[ $(echo "$response" | jq -r '.success') == "true" ]]; then
+                echo "IP地址 $ip 成功解析到 ${subdomain}.${domain}"
+            else
+                echo "导入IP地址 $ip 失败"
+            fi
+            echo "IP地址 $ip 的国家代码为 $common_country_code" >> "$informlog_file"
+        fi
     done
 
     # 确保informlog文件至少有一些内容
@@ -232,10 +179,11 @@ update_dns_with_common_country_code() {
 
 
 
+
+
 ## 测速
 cloudflareSpeedTest(){
-  echo "模拟测速成功"
-  #./cfst -tp $point $CFST_URL_R -t $CFST_T -n $CFST_N -dn $CFST_DN -p $CFST_DN -tl $CFST_TL -tll $CFST_TLL -sl $CFST_SL $CFST_SPD -dt 8
+  ./cfst -tp $point $CFST_URL_R -t $CFST_T -n $CFST_N -dn $CFST_DN -p $CFST_DN -tl $CFST_TL -tll $CFST_TLL -sl $CFST_SL $CFST_SPD -dt 8
 }
 
 
