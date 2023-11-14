@@ -79,7 +79,6 @@ proxy-groups:
       - juanshen_provider
     proxies:
       - ✈️ 手动选择
-      - 🛰️ 自建节点
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡

@@ -14,7 +14,7 @@ proxies:
     uuid: fbfae0fd-6429-41fc-f464-f31d78548dad
     ws-opts:
       headers:
-        Host: cf-cdn.juanshen.eu.org
+        Host: cf-fd.juanshen.eu.org
       path: /fbfae0fd
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
@@ -32,7 +32,7 @@ proxies:
     name: cf-vless-443
     network: ws
     port: 443
-    server: cf-cdn.juanshen.eu.org
+    server: cf-fd.juanshen.eu.org
     servername: cf.juanshen.eu.org
     tls: true
     type: vless
@@ -45,7 +45,7 @@ proxies:
     name: cf-vless-8443
     network: ws
     port: 8443
-    server: cf-cdn.juanshen.eu.org
+    server: cf-fd.juanshen.eu.org
     servername: cf.juanshen.eu.org
     tls: true
     type: vless
@@ -58,7 +58,7 @@ proxies:
     name: cf-vless-2053
     network: ws
     port: 443
-    server: cf-cdn.juanshen.eu.org
+    server: cf-fd.juanshen.eu.org
     servername: cf.juanshen.eu.org
     tls: true
     type: vless
@@ -71,7 +71,7 @@ proxies:
     name: cf-vless-2083
     network: ws
     port: 443
-    server: cf-cdn.juanshen.eu.org
+    server: cf-fd.juanshen.eu.org
     servername: cf.juanshen.eu.org
     tls: true
     type: vless
@@ -84,7 +84,7 @@ proxies:
     name: cf-vless-2087
     network: ws
     port: 443
-    server: cf-cdn.juanshen.eu.org
+    server: cf-fd.juanshen.eu.org
     servername: cf.juanshen.eu.org
     tls: true
     type: vless
@@ -97,7 +97,7 @@ proxies:
     name: cf-vless-2096
     network: ws
     port: 443
-    server: cf-cdn.juanshen.eu.org
+    server: cf-fd.juanshen.eu.org
     servername: cf.juanshen.eu.org
     tls: true
     type: vless
