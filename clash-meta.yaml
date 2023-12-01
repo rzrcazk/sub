@@ -84,21 +84,12 @@ proxy-groups:
       - 🔮 负载均衡
       - DIRECT
 
-  - name: 🛰️ 自建节点
-    type: select
-    proxies:
-      - aws-reality-vision
-      - aws-vmess-ws
-      - aws-hysteria2
-      - aws-tuic5
-
   - name: 📹 流媒体
     type: select
     use:
       - juanshen_provider
     proxies:
       - ✈️ 手动选择
-      - 🛰️ 自建节点
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
@@ -160,8 +151,9 @@ proxy-groups:
     use:
       - juanshen_provider
     proxies:
-      - ✈️ 手动选择
       - ♻️ 自动选择
+      - ✈️ 手动选择
+
 
   - name: 📺 YouTube
     type: select
@@ -170,6 +162,7 @@ proxy-groups:
     proxies:
       - ✈️ 手动选择
       - ♻️ 自动选择
+
   - name: 🎥 Netflix
     type: select
     use:
@@ -178,6 +171,7 @@ proxy-groups:
       - 📹 流媒体
       - 🛩️ 节点选择
       - ♻️ 自动选择
+
   - name: 🎦 HBOGO
     type: select
     use:
@@ -186,6 +180,7 @@ proxy-groups:
       - 📹 流媒体
       - 🛩️ 节点选择
       - ♻️ 自动选择
+
   - name: 🧚 Bing
     type: select
     use:
@@ -201,7 +196,6 @@ proxy-groups:
     proxies:
       - 🛩️ 节点选择
       - ♻️ 自动选择
-      - 🛰️ 自建节点
 
   - name: 🐹 Disney
     type: select
