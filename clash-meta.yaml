@@ -86,8 +86,6 @@ proxy-groups:
 
   - name: 🛰️ 自建节点
     type: select
-    use:
-      - juanshen_provider
     proxies:
       - aws-reality-vision
       - aws-vmess-ws
