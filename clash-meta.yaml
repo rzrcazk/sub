@@ -88,7 +88,11 @@ proxy-groups:
     type: select
     use:
       - juanshen_provider
-    proxies: null
+    proxies:
+      - aws-reality-vision
+      - aws-vmess-ws
+      - aws-hysteria2
+      - aws-tuic5
 
   - name: 📹 流媒体
     type: select
