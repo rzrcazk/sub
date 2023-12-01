@@ -1,448 +1,390 @@
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: aws-vmess
+- name: cf-cdn-80
+  network: ws
+  port: 80
+  server: cf-cdn.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: false
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- name: cf-cdn-8080
   network: ws
   port: 8080
-  server: aws.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
+  server: cf-cdn.juanshen.eu.org
+  servername: cf.juanshen.eu.org
   tls: false
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- name: cf-cdn-8880
+  network: ws
+  port: 8880
+  server: cf-cdn.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: false
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- name: cf-cdn-2052
+  network: ws
+  port: 2052
+  server: cf-cdn.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: false
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- name: cf-cdn-2082
+  network: ws
+  port: 2082
+  server: cf-cdn.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: false
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- name: cf-cdn-2086
+  network: ws
+  port: 2086
+  server: cf-cdn.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: false
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- name: cf-cdn-2095
+  network: ws
+  port: 2095
+  server: cf-cdn.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: false
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- name: cf-80
+  network: ws
+  port: 80
+  server: cf-cdn.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: false
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- name: cf-8080
+  network: ws
+  port: 8080
+  server: cf.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: false
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- name: cf-8880
+  network: ws
+  port: 8880
+  server: cf.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: false
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- name: cf-2052
+  network: ws
+  port: 2052
+  server: cf.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: false
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- name: cf-2082
+  network: ws
+  port: 2082
+  server: cf.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: false
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- name: cf-2086
+  network: ws
+  port: 2086
+  server: cf.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: false
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- name: cf-2095
+  network: ws
+  port: 2095
+  server: cf.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: false
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: cf-cdn-443
+  network: ws
+  port: 443
+  server: cf-cdn.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: cf-cdn-8443
+  network: ws
+  port: 8443
+  server: cf-cdn.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: cf-cdn-2053
+  network: ws
+  port: 2053
+  server: cf-cdn.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: cf-cdn-2083
+  network: ws
+  port: 2083
+  server: cf-cdn.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: cf-cdn-2087
+  network: ws
+  port: 2087
+  server: cf-cdn.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: cf-cdn-2096
+  network: ws
+  port: 2096
+  server: cf-cdn.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: cf-443
+  network: ws
+  port: 443
+  server: cf.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: cf-8443
+  network: ws
+  port: 8443
+  server: cf.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: cf-2053
+  network: ws
+  port: 2053
+  server: cf.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: cf-2083
+  network: ws
+  port: 2083
+  server: cf.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: cf-2087
+  network: ws
+  port: 2087
+  server: cf.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- client-fingerprint: random
+  name: cf-2096
+  network: ws
+  port: 2096
+  server: cf.juanshen.eu.org
+  servername: cf.juanshen.eu.org
+  tls: true
+  type: vless
+  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+  ws-opts:
+    headers:
+      host: cf.juanshen.eu.org
+    path: /?ed=2048
+- flow: xtls-rprx-vision
+  name: aws-vless
+  server: 57.180.53.126
+  server_port: 51899
+  tls:
+    enabled: true
+    reality:
+      enabled: true
+      public_key: pYzWA7QeObgnQIhSklHtrHfdweWHrFitJD-Yq7vcYhY
+      short_id: 1b68f2c7
+    server_name: www.yahoo.com
+    utls:
+      enabled: true
+      fingerprint: chrome
+  type: vless
+  uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+- name: aws-vmess
+  security: auto
+  server: 57.180.53.126
+  server_port: 2087
+  tls:
+    enabled: false
+    insecure: false
+    server_name: aws.juanshen.eu.org
+    utls:
+      enabled: true
+      fingerprint: chrome
+  transport:
+    headers:
+      Host:
+      - aws.juanshen.eu.org
+    path: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9-vm
+    type: ws
   type: vmess
-  udp: true
-  uuid: fbfae0fd-6429-41fc-f464-f31d78548dad
-  ws-opts:
-    headers:
-      Host: cf-cdn.juanshen.eu.org
-    path: /fbfae0fd
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: aws-vision
-  port: 443
+  uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+- password: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
   server: aws.juanshen.eu.org
-  servername: aws.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: dec7d9e4-908b-4c6f-b18c-e199fceecdcd
-- client-fingerprint: random
-  name: cf-80
-  network: ws
-  port: 80
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-80-fd
-  network: ws
-  port: 80
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-8080
-  network: ws
-  port: 8080
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-8080-fd
-  network: ws
-  port: 8080
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-8880
-  network: ws
-  port: 8880
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-8880-fd
-  network: ws
-  port: 8880
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-2052
-  network: ws
-  port: 2052
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-2052-fd
-  network: ws
-  port: 2052
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-2086
-  network: ws
-  port: 2086
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-2086-fd
-  network: ws
-  port: 2086
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-2095
-  network: ws
-  port: 2095
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-2095-fd
-  network: ws
-  port: 2095
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-2082
-  network: ws
-  port: 2082
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-2082-fd
-  network: ws
-  port: 2082
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-tls-443
-  network: ws
-  port: 443
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-tls-443-fd
-  network: ws
-  port: 443
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-tls-8443
-  network: ws
-  port: 8443
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-tls-8443-fd
-  network: ws
-  port: 8443
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-tls-2053
-  network: ws
-  port: 2053
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-tls-2053-fd
-  network: ws
-  port: 2053
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-tls-2096
-  network: ws
-  port: 2096
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-tls-2096-fd
-  network: ws
-  port: 2096
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-tls-2087
-  network: ws
-  port: 2087
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-tls-2087-fd
-  network: ws
-  port: 2087
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-tls-2083
-  network: ws
-  port: 2083
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-tls-2083-fd
-  network: ws
-  port: 2083
-  server: cf-fd.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      Host: cf.juanshen.eu.org
-    path: /?ed=2048
+  server_port: 3281
+  tag: aws-h2
+  tls:
+    alpn:
+    - h3
+    enabled: true
+    insecure: false
+    server_name: aws.juanshen.eu.org
+  type: hysteria2
+- congestion_control: bbr
+  heartbeat: 10s
+  name: aws-tuic
+  password: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+  server: aws.juanshen.eu.org
+  server_port: 19409
+  tls:
+    alpn:
+    - h3
+    enabled: true
+    insecure: false
+    server_name: aws.juanshen.eu.org
+  type: tuic
+  udp_over_stream: false
+  udp_relay_mode: native
+  uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+  zero_rtt_handshake: false
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: GLaDOS-B1-01
@@ -1130,23 +1072,6 @@
   tfo: false
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: aws-vmess-gpt
-  network: ws
-  port: 80
-  server: aws-gpt.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4da7f4bb-64e7-4e9e-d716-7dbbf4263a4e
-  ws-opts:
-    headers:
-      Host: aws-gpt.juanshen.eu.org
-    path: /abcd
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: GLaDOS-B1-01 2
