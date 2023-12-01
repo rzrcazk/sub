@@ -323,69 +323,65 @@ proxies:
       headers:
         host: cf.juanshen.eu.org
       path: /?ed=2048
-  - flow: xtls-rprx-vision
-    name: aws-vless
-    server: 57.180.53.126
-    server_port: 51899
-    tls:
-      enabled: true
-      reality:
-        enabled: true
-        public_key: pYzWA7QeObgnQIhSklHtrHfdweWHrFitJD-Yq7vcYhY
-        short_id: 1b68f2c7
-      server_name: www.yahoo.com
-      utls:
-        enabled: true
-        fingerprint: chrome
+
+
+  - name: aws-reality-vision
     type: vless
-    uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
-  - name: aws-vmess
-    security: auto
     server: 57.180.53.126
-    server_port: 2087
-    tls:
-      enabled: false
-      insecure: false
-      server_name: aws.juanshen.eu.org
-      utls:
-        enabled: true
-        fingerprint: chrome
-    transport:
-      headers:
-        Host:
-        - aws.juanshen.eu.org
-      path: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9-vm
-      type: ws
+    port: 51899
+    uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com
+    reality-opts:
+      public-key: pYzWA7QeObgnQIhSklHtrHfdweWHrFitJD-Yq7vcYhY
+      short-id: 1b68f2c7
+    client-fingerprint: chrome
+
+  - name: aws-vmess-ws
     type: vmess
+    server: 57.180.53.126
+    port: 2087
     uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
-  - password: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
-    server: aws.juanshen.eu.org
-    server_port: 3281
-    tag: aws-h2
-    tls:
-      alpn:
-      - h3
-      enabled: true
-      insecure: false
-      server_name: aws.juanshen.eu.org
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: aws.juanshen.eu.org
+    ws-opts:
+      path: "cbb2787a-7c98-4b9b-bfa0-af66a55c0de9-vm"
+      headers:
+        Host: aws.juanshen.eu.org
+
+
+  - name: aws-hysteria2
     type: hysteria2
-  - congestion_control: bbr
-    heartbeat: 10s
-    name: aws-tuic
-    password: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
     server: aws.juanshen.eu.org
-    server_port: 19409
-    tls:
-      alpn:
+    port: 3281
+    password: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+    alpn:
       - h3
-      enabled: true
-      insecure: false
-      server_name: aws.juanshen.eu.org
+    sni: aws.juanshen.eu.org
+    skip-cert-verify: false
+    fast-open: true
+
+  - name: aws-tuic5
+    server: aws.juanshen.eu.org
+    port: 19409
     type: tuic
-    udp_over_stream: false
-    udp_relay_mode: native
     uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
-    zero_rtt_handshake: false
+    password: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+    alpn: [h3]
+    disable-sni: true
+    reduce-rtt: true
+    udp-relay-mode: native
+    congestion-controller: bbr
+    sni: aws.juanshen.eu.org
+    skip-cert-verify: false
+
   - cipher: chacha20-ietf-poly1305
     client-fingerprint: chrome
     name: GLaDOS-B1-01
