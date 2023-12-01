@@ -1,1762 +1,1762 @@
 proxies:
-- name: cf-cdn-80
-  network: ws
-  port: 80
-  server: cf-cdn.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: false
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- name: cf-cdn-8080
-  network: ws
-  port: 8080
-  server: cf-cdn.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: false
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- name: cf-cdn-8880
-  network: ws
-  port: 8880
-  server: cf-cdn.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: false
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- name: cf-cdn-2052
-  network: ws
-  port: 2052
-  server: cf-cdn.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: false
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- name: cf-cdn-2082
-  network: ws
-  port: 2082
-  server: cf-cdn.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: false
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- name: cf-cdn-2086
-  network: ws
-  port: 2086
-  server: cf-cdn.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: false
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- name: cf-cdn-2095
-  network: ws
-  port: 2095
-  server: cf-cdn.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: false
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- name: cf-80
-  network: ws
-  port: 80
-  server: cf-cdn.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: false
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- name: cf-8080
-  network: ws
-  port: 8080
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: false
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- name: cf-8880
-  network: ws
-  port: 8880
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: false
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- name: cf-2052
-  network: ws
-  port: 2052
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: false
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- name: cf-2082
-  network: ws
-  port: 2082
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: false
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- name: cf-2086
-  network: ws
-  port: 2086
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: false
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- name: cf-2095
-  network: ws
-  port: 2095
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: false
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-cdn-443
-  network: ws
-  port: 443
-  server: cf-cdn.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-cdn-8443
-  network: ws
-  port: 8443
-  server: cf-cdn.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-cdn-2053
-  network: ws
-  port: 2053
-  server: cf-cdn.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-cdn-2083
-  network: ws
-  port: 2083
-  server: cf-cdn.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-cdn-2087
-  network: ws
-  port: 2087
-  server: cf-cdn.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-cdn-2096
-  network: ws
-  port: 2096
-  server: cf-cdn.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-443
-  network: ws
-  port: 443
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-8443
-  network: ws
-  port: 8443
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-2053
-  network: ws
-  port: 2053
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-2083
-  network: ws
-  port: 2083
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-2087
-  network: ws
-  port: 2087
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- client-fingerprint: random
-  name: cf-2096
-  network: ws
-  port: 2096
-  server: cf.juanshen.eu.org
-  servername: cf.juanshen.eu.org
-  tls: true
-  type: vless
-  uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
-  ws-opts:
-    headers:
-      host: cf.juanshen.eu.org
-    path: /?ed=2048
-- flow: xtls-rprx-vision
-  name: aws-vless
-  server: 57.180.53.126
-  server_port: 51899
-  tls:
-    enabled: true
-    reality:
+  - name: cf-cdn-80
+    network: ws
+    port: 80
+    server: cf-cdn.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: false
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - name: cf-cdn-8080
+    network: ws
+    port: 8080
+    server: cf-cdn.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: false
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - name: cf-cdn-8880
+    network: ws
+    port: 8880
+    server: cf-cdn.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: false
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - name: cf-cdn-2052
+    network: ws
+    port: 2052
+    server: cf-cdn.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: false
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - name: cf-cdn-2082
+    network: ws
+    port: 2082
+    server: cf-cdn.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: false
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - name: cf-cdn-2086
+    network: ws
+    port: 2086
+    server: cf-cdn.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: false
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - name: cf-cdn-2095
+    network: ws
+    port: 2095
+    server: cf-cdn.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: false
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - name: cf-80
+    network: ws
+    port: 80
+    server: cf-cdn.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: false
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - name: cf-8080
+    network: ws
+    port: 8080
+    server: cf.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: false
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - name: cf-8880
+    network: ws
+    port: 8880
+    server: cf.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: false
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - name: cf-2052
+    network: ws
+    port: 2052
+    server: cf.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: false
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - name: cf-2082
+    network: ws
+    port: 2082
+    server: cf.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: false
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - name: cf-2086
+    network: ws
+    port: 2086
+    server: cf.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: false
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - name: cf-2095
+    network: ws
+    port: 2095
+    server: cf.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: false
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - client-fingerprint: random
+    name: cf-cdn-443
+    network: ws
+    port: 443
+    server: cf-cdn.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: true
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - client-fingerprint: random
+    name: cf-cdn-8443
+    network: ws
+    port: 8443
+    server: cf-cdn.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: true
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - client-fingerprint: random
+    name: cf-cdn-2053
+    network: ws
+    port: 2053
+    server: cf-cdn.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: true
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - client-fingerprint: random
+    name: cf-cdn-2083
+    network: ws
+    port: 2083
+    server: cf-cdn.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: true
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - client-fingerprint: random
+    name: cf-cdn-2087
+    network: ws
+    port: 2087
+    server: cf-cdn.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: true
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - client-fingerprint: random
+    name: cf-cdn-2096
+    network: ws
+    port: 2096
+    server: cf-cdn.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: true
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - client-fingerprint: random
+    name: cf-443
+    network: ws
+    port: 443
+    server: cf.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: true
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - client-fingerprint: random
+    name: cf-8443
+    network: ws
+    port: 8443
+    server: cf.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: true
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - client-fingerprint: random
+    name: cf-2053
+    network: ws
+    port: 2053
+    server: cf.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: true
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - client-fingerprint: random
+    name: cf-2083
+    network: ws
+    port: 2083
+    server: cf.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: true
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - client-fingerprint: random
+    name: cf-2087
+    network: ws
+    port: 2087
+    server: cf.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: true
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - client-fingerprint: random
+    name: cf-2096
+    network: ws
+    port: 2096
+    server: cf.juanshen.eu.org
+    servername: cf.juanshen.eu.org
+    tls: true
+    type: vless
+    uuid: 89044b34-5b29-46d4-a92f-2be0178f15cf
+    ws-opts:
+      headers:
+        host: cf.juanshen.eu.org
+      path: /?ed=2048
+  - flow: xtls-rprx-vision
+    name: aws-vless
+    server: 57.180.53.126
+    server_port: 51899
+    tls:
       enabled: true
-      public_key: pYzWA7QeObgnQIhSklHtrHfdweWHrFitJD-Yq7vcYhY
-      short_id: 1b68f2c7
-    server_name: www.yahoo.com
-    utls:
+      reality:
+        enabled: true
+        public_key: pYzWA7QeObgnQIhSklHtrHfdweWHrFitJD-Yq7vcYhY
+        short_id: 1b68f2c7
+      server_name: www.yahoo.com
+      utls:
+        enabled: true
+        fingerprint: chrome
+    type: vless
+    uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+  - name: aws-vmess
+    security: auto
+    server: 57.180.53.126
+    server_port: 2087
+    tls:
+      enabled: false
+      insecure: false
+      server_name: aws.juanshen.eu.org
+      utls:
+        enabled: true
+        fingerprint: chrome
+    transport:
+      headers:
+        Host:
+        - aws.juanshen.eu.org
+      path: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9-vm
+      type: ws
+    type: vmess
+    uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+  - password: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+    server: aws.juanshen.eu.org
+    server_port: 3281
+    tag: aws-h2
+    tls:
+      alpn:
+      - h3
       enabled: true
-      fingerprint: chrome
-  type: vless
-  uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
-- name: aws-vmess
-  security: auto
-  server: 57.180.53.126
-  server_port: 2087
-  tls:
-    enabled: false
-    insecure: false
-    server_name: aws.juanshen.eu.org
-    utls:
+      insecure: false
+      server_name: aws.juanshen.eu.org
+    type: hysteria2
+  - congestion_control: bbr
+    heartbeat: 10s
+    name: aws-tuic
+    password: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+    server: aws.juanshen.eu.org
+    server_port: 19409
+    tls:
+      alpn:
+      - h3
       enabled: true
-      fingerprint: chrome
-  transport:
-    headers:
-      Host:
-      - aws.juanshen.eu.org
-    path: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9-vm
-    type: ws
-  type: vmess
-  uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
-- password: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
-  server: aws.juanshen.eu.org
-  server_port: 3281
-  tag: aws-h2
-  tls:
-    alpn:
-    - h3
-    enabled: true
-    insecure: false
-    server_name: aws.juanshen.eu.org
-  type: hysteria2
-- congestion_control: bbr
-  heartbeat: 10s
-  name: aws-tuic
-  password: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
-  server: aws.juanshen.eu.org
-  server_port: 19409
-  tls:
-    alpn:
-    - h3
-    enabled: true
-    insecure: false
-    server_name: aws.juanshen.eu.org
-  type: tuic
-  udp_over_stream: false
-  udp_relay_mode: native
-  uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
-  zero_rtt_handshake: false
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-01
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.nintendo.net:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.b1.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-02
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.nintendo.eu:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.b2.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-03
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.eu:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.b3.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-04
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.io:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.b4.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-05
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.eu:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.b5.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-06
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.mozilla.net:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.b6.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-07
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.jp:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.b7.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-08
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.nvidia.com:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.b8.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-09
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.xboxlive.com:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.b9.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-01
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.de:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.u1.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-02
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.it:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.u2.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-03
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.nintendo.be:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.u3.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-04
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.md:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.u4.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-05
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.fi:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.u5.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-06
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.de:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.u6.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇯🇵 GLaDOS-JP-01
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.nintendo.jp:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.j1.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇯🇵 GLaDOS-JP-02
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.nintendo.net:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.j2.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇯🇵 GLaDOS-JP-03
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.cat:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.j3.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-01
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.nintendo.jp:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.t1.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-02
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.jp:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.t2.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-03
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.ge:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.t3.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-04
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.xboxlive.com:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.t4.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-05
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.eu:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.t5.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-06
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.mozilla.net:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.t6.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇸🇬 GLaDOS-SG-01
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.net:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.s1.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇸🇬 GLaDOS-SG-02
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.it:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.s2.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇸🇬 GLaDOS-SG-03
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.fastly.net:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.s3.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇭🇰 GLaDOS-HK-01
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.epicgames.com:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.h1.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇭🇰 GLaDOS-HK-02
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.com:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.h2.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇭🇰 GLaDOS-HK-03
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.xboxlive.com:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.h3.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇬🇧 GLaDOS-UK-01
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.epicgames.com:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.e1.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇬🇧 GLaDOS-UK-02
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.nintendo.es:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.e2.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇬🇧 GLaDOS-UK-03
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.blizzard.com:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.e3.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-D1-01
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.nintendo.de:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.da.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-D1-02
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.epicgames.com:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.db.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-D1-03
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.lt:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.dc.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-S1-01
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.net.net:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.f1.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-S1-02
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.lv.net:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.f2.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-S1-03
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.nintendo.net.net:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.f3.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-1-Netflix
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.cl.net:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.d1.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-2-Netflix
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.ge.net:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.d2.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-3-Netflix
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.lv.net:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.d3.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-4-Netflix
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.microsoft.cz.net:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.d4.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-5-Netflix
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.nintendo.net.net:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.d5.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-6-Netflix
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: d4bc243.dl.nintendo.com.net:45839
-    mode: tls
-  port: 2377
-  server: d4bc243.d6.gladns.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-R1-01
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: endpoint.moss.network
-    mode: websocket
-    mux: true
-    path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
-    skip-cert-verify: true
-    tls: false
-  port: 8880
-  server: d4bc243.qa.glados-config.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-R1-02
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: endpoint.moss.network
-    mode: websocket
-    mux: true
-    path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
-    skip-cert-verify: true
-    tls: false
-  port: 8880
-  server: d4bc243.qb.glados-config.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-R1-03
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: endpoint.moss.network
-    mode: websocket
-    mux: true
-    path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
-    skip-cert-verify: true
-    tls: false
-  port: 8880
-  server: d4bc243.qc.glados-config.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-R1-04
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: intrepid.moss.network
-    mode: websocket
-    mux: true
-    path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
-    skip-cert-verify: true
-    tls: false
-  port: 8880
-  server: d4bc243.qd.glados-config.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-R1-05
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: intrepid.moss.network
-    mode: websocket
-    mux: true
-    path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
-    skip-cert-verify: true
-    tls: false
-  port: 8880
-  server: d4bc243.qe.glados-config.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-R1-06
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: intrepid.moss.network
-    mode: websocket
-    mux: true
-    path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
-    skip-cert-verify: true
-    tls: false
-  port: 8880
-  server: d4bc243.qf.glados-config.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-01 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.lt:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.b1.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-02 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.ee:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.b2.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-03 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.dk:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.b3.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-04 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.nintendo.com:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.b4.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-05 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.nintendo.net:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.b5.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-06 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.md:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.b6.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-07 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.nintendo.be:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.b7.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-08 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.nintendo.eu:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.b8.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-B1-09 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.cz:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.b9.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-01 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.dk:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.u1.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-02 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.nintendo.it:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.u2.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-03 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.dk:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.u3.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-04 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.fastly.net:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.u4.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-05 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.nintendo.be:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.u5.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-06 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.io:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.u6.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇯🇵 GLaDOS-JP-01 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.fastly.net:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.j1.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇯🇵 GLaDOS-JP-02 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.cat:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.j2.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇯🇵 GLaDOS-JP-03 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.nintendo.es:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.j3.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-01 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.ee:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.t1.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-02 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.nintendo.de:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.t2.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-03 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.mozilla.net:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.t3.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-04 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.net:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.t4.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-05 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.nintendo.com:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.t5.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-06 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.nintendo.net:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.t6.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇸🇬 GLaDOS-SG-01 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.xboxlive.com:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.s1.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇸🇬 GLaDOS-SG-02 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.ch:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.s2.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇸🇬 GLaDOS-SG-03 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.nintendo.de:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.s3.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇭🇰 GLaDOS-HK-01 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.es:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.h1.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇭🇰 GLaDOS-HK-02 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.is:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.h2.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇭🇰 GLaDOS-HK-03 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.cat:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.h3.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇬🇧 GLaDOS-UK-01 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.blizzard.com:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.e1.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇬🇧 GLaDOS-UK-02 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.nintendo.com:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.e2.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇬🇧 GLaDOS-UK-03 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.xboxlive.com:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.e3.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-D1-01 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.cl:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.da.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-D1-02 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.lv:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.db.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-D1-03 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.nvidia.com:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.dc.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-S1-01 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.net.net:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.f1.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-S1-02 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.nvidia.com.net:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.f2.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-S1-03 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.hu.net:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.f3.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-1-Netflix 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.com.net:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.d1.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-2-Netflix 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.jp.net:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.d2.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇨🇳 GLaDOS-TW-3-Netflix 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.lu.net:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.d3.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-4-Netflix 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.nintendo.eu.net:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.d4.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-5-Netflix 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.nintendo.be.net:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.d5.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇺🇸 GLaDOS-US-6-Netflix 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8e0ab95.dl.microsoft.es.net:10243
-    mode: tls
-  port: 2377
-  server: 8e0ab95.d6.glados-config.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-R1-01 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: endpoint.moss.network
-    mode: websocket
-    mux: true
-    path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
-    skip-cert-verify: true
-    tls: false
-  port: 8880
-  server: 8e0ab95.qa.glados-config.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-R1-02 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: endpoint.moss.network
-    mode: websocket
-    mux: true
-    path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
-    skip-cert-verify: true
-    tls: false
-  port: 8880
-  server: 8e0ab95.qb.glados-config.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-R1-03 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: endpoint.moss.network
-    mode: websocket
-    mux: true
-    path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
-    skip-cert-verify: true
-    tls: false
-  port: 8880
-  server: 8e0ab95.qc.glados-config.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-R1-04 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: intrepid.moss.network
-    mode: websocket
-    mux: true
-    path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
-    skip-cert-verify: true
-    tls: false
-  port: 8880
-  server: 8e0ab95.qd.glados-config.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-R1-05 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: intrepid.moss.network
-    mode: websocket
-    mux: true
-    path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
-    skip-cert-verify: true
-    tls: false
-  port: 8880
-  server: 8e0ab95.qe.glados-config.com
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: GLaDOS-R1-06 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: intrepid.moss.network
-    mode: websocket
-    mux: true
-    path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
-    skip-cert-verify: true
-    tls: false
-  port: 8880
-  server: 8e0ab95.qf.glados-config.com
-  tfo: false
-  type: ss
-  udp: true
+      insecure: false
+      server_name: aws.juanshen.eu.org
+    type: tuic
+    udp_over_stream: false
+    udp_relay_mode: native
+    uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+    zero_rtt_handshake: false
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-01
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.nintendo.net:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.b1.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-02
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.nintendo.eu:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.b2.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-03
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.eu:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.b3.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-04
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.io:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.b4.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-05
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.eu:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.b5.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-06
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.mozilla.net:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.b6.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-07
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.jp:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.b7.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-08
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.nvidia.com:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.b8.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-09
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.xboxlive.com:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.b9.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-01
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.de:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.u1.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-02
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.it:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.u2.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-03
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.nintendo.be:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.u3.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-04
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.md:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.u4.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-05
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.fi:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.u5.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-06
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.de:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.u6.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇯🇵 GLaDOS-JP-01
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.nintendo.jp:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.j1.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇯🇵 GLaDOS-JP-02
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.nintendo.net:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.j2.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇯🇵 GLaDOS-JP-03
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.cat:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.j3.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-01
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.nintendo.jp:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.t1.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-02
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.jp:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.t2.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-03
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.ge:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.t3.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-04
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.xboxlive.com:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.t4.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-05
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.eu:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.t5.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-06
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.mozilla.net:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.t6.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇸🇬 GLaDOS-SG-01
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.net:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.s1.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇸🇬 GLaDOS-SG-02
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.it:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.s2.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇸🇬 GLaDOS-SG-03
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.fastly.net:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.s3.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇭🇰 GLaDOS-HK-01
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.epicgames.com:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.h1.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇭🇰 GLaDOS-HK-02
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.com:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.h2.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇭🇰 GLaDOS-HK-03
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.xboxlive.com:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.h3.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇬🇧 GLaDOS-UK-01
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.epicgames.com:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.e1.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇬🇧 GLaDOS-UK-02
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.nintendo.es:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.e2.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇬🇧 GLaDOS-UK-03
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.blizzard.com:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.e3.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-D1-01
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.nintendo.de:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.da.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-D1-02
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.epicgames.com:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.db.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-D1-03
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.lt:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.dc.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-S1-01
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.net.net:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.f1.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-S1-02
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.lv.net:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.f2.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-S1-03
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.nintendo.net.net:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.f3.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-1-Netflix
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.cl.net:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.d1.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-2-Netflix
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.ge.net:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.d2.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-3-Netflix
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.lv.net:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.d3.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-4-Netflix
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.microsoft.cz.net:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.d4.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-5-Netflix
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.nintendo.net.net:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.d5.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-6-Netflix
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: d4bc243.dl.nintendo.com.net:45839
+      mode: tls
+    port: 2377
+    server: d4bc243.d6.gladns.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-R1-01
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: endpoint.moss.network
+      mode: websocket
+      mux: true
+      path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
+      skip-cert-verify: true
+      tls: false
+    port: 8880
+    server: d4bc243.qa.glados-config.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-R1-02
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: endpoint.moss.network
+      mode: websocket
+      mux: true
+      path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
+      skip-cert-verify: true
+      tls: false
+    port: 8880
+    server: d4bc243.qb.glados-config.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-R1-03
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: endpoint.moss.network
+      mode: websocket
+      mux: true
+      path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
+      skip-cert-verify: true
+      tls: false
+    port: 8880
+    server: d4bc243.qc.glados-config.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-R1-04
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: intrepid.moss.network
+      mode: websocket
+      mux: true
+      path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
+      skip-cert-verify: true
+      tls: false
+    port: 8880
+    server: d4bc243.qd.glados-config.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-R1-05
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: intrepid.moss.network
+      mode: websocket
+      mux: true
+      path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
+      skip-cert-verify: true
+      tls: false
+    port: 8880
+    server: d4bc243.qe.glados-config.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-R1-06
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: intrepid.moss.network
+      mode: websocket
+      mux: true
+      path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
+      skip-cert-verify: true
+      tls: false
+    port: 8880
+    server: d4bc243.qf.glados-config.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-01 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.lt:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.b1.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-02 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.ee:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.b2.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-03 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.dk:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.b3.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-04 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.nintendo.com:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.b4.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-05 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.nintendo.net:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.b5.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-06 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.md:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.b6.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-07 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.nintendo.be:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.b7.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-08 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.nintendo.eu:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.b8.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-B1-09 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.cz:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.b9.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-01 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.dk:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.u1.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-02 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.nintendo.it:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.u2.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-03 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.dk:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.u3.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-04 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.fastly.net:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.u4.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-05 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.nintendo.be:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.u5.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-06 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.io:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.u6.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇯🇵 GLaDOS-JP-01 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.fastly.net:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.j1.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇯🇵 GLaDOS-JP-02 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.cat:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.j2.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇯🇵 GLaDOS-JP-03 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.nintendo.es:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.j3.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-01 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.ee:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.t1.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-02 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.nintendo.de:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.t2.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-03 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.mozilla.net:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.t3.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-04 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.net:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.t4.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-05 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.nintendo.com:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.t5.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-06 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.nintendo.net:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.t6.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇸🇬 GLaDOS-SG-01 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.xboxlive.com:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.s1.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇸🇬 GLaDOS-SG-02 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.ch:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.s2.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇸🇬 GLaDOS-SG-03 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.nintendo.de:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.s3.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇭🇰 GLaDOS-HK-01 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.es:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.h1.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇭🇰 GLaDOS-HK-02 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.is:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.h2.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇭🇰 GLaDOS-HK-03 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.cat:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.h3.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇬🇧 GLaDOS-UK-01 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.blizzard.com:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.e1.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇬🇧 GLaDOS-UK-02 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.nintendo.com:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.e2.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇬🇧 GLaDOS-UK-03 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.xboxlive.com:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.e3.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-D1-01 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.cl:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.da.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-D1-02 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.lv:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.db.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-D1-03 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.nvidia.com:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.dc.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-S1-01 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.net.net:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.f1.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-S1-02 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.nvidia.com.net:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.f2.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-S1-03 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.hu.net:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.f3.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-1-Netflix 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.com.net:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.d1.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-2-Netflix 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.jp.net:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.d2.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇨🇳 GLaDOS-TW-3-Netflix 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.lu.net:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.d3.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-4-Netflix 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.nintendo.eu.net:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.d4.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-5-Netflix 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.nintendo.be.net:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.d5.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: 🇺🇸 GLaDOS-US-6-Netflix 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: obfs
+    plugin-opts:
+      host: 8e0ab95.dl.microsoft.es.net:10243
+      mode: tls
+    port: 2377
+    server: 8e0ab95.d6.glados-config.net
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-R1-01 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: endpoint.moss.network
+      mode: websocket
+      mux: true
+      path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
+      skip-cert-verify: true
+      tls: false
+    port: 8880
+    server: 8e0ab95.qa.glados-config.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-R1-02 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: endpoint.moss.network
+      mode: websocket
+      mux: true
+      path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
+      skip-cert-verify: true
+      tls: false
+    port: 8880
+    server: 8e0ab95.qb.glados-config.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-R1-03 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: endpoint.moss.network
+      mode: websocket
+      mux: true
+      path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
+      skip-cert-verify: true
+      tls: false
+    port: 8880
+    server: 8e0ab95.qc.glados-config.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-R1-04 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: intrepid.moss.network
+      mode: websocket
+      mux: true
+      path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
+      skip-cert-verify: true
+      tls: false
+    port: 8880
+    server: 8e0ab95.qd.glados-config.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-R1-05 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: intrepid.moss.network
+      mode: websocket
+      mux: true
+      path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
+      skip-cert-verify: true
+      tls: false
+    port: 8880
+    server: 8e0ab95.qe.glados-config.com
+    tfo: false
+    type: ss
+    udp: true
+  - cipher: chacha20-ietf-poly1305
+    client-fingerprint: chrome
+    name: GLaDOS-R1-06 2
+    password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+    plugin: v2ray-plugin
+    plugin-opts:
+      host: intrepid.moss.network
+      mode: websocket
+      mux: true
+      path: /9daad54c-7685-402c-8a97-e6a04ec7cb11/connect
+      skip-cert-verify: true
+      tls: false
+    port: 8880
+    server: 8e0ab95.qf.glados-config.com
+    tfo: false
+    type: ss
+    udp: true
