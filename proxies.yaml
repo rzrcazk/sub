@@ -322,23 +322,69 @@
     headers:
       host: cf.juanshen.eu.org
     path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: aws-vmess-cdn
-  network: ws
-  port: 80
-  server: aws.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4da7f4bb-64e7-4e9e-d716-7dbbf4263a4e
-  ws-opts:
+- flow: xtls-rprx-vision
+  name: aws-vless
+  server: 57.180.53.126
+  server_port: 51899
+  tls:
+    enabled: true
+    reality:
+      enabled: true
+      public_key: pYzWA7QeObgnQIhSklHtrHfdweWHrFitJD-Yq7vcYhY
+      short_id: 1b68f2c7
+    server_name: www.yahoo.com
+    utls:
+      enabled: true
+      fingerprint: chrome
+  type: vless
+  uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+- name: aws-vmess
+  security: auto
+  server: 57.180.53.126
+  server_port: 2087
+  tls:
+    enabled: false
+    insecure: false
+    server_name: aws.juanshen.eu.org
+    utls:
+      enabled: true
+      fingerprint: chrome
+  transport:
     headers:
-      Host: aws.juanshen.eu.org
-    path: /abcd
+      Host:
+      - aws.juanshen.eu.org
+    path: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9-vm
+    type: ws
+  type: vmess
+  uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+- password: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+  server: aws.juanshen.eu.org
+  server_port: 3281
+  tag: aws-h2
+  tls:
+    alpn:
+    - h3
+    enabled: true
+    insecure: false
+    server_name: aws.juanshen.eu.org
+  type: hysteria2
+- congestion_control: bbr
+  heartbeat: 10s
+  name: aws-tuic
+  password: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+  server: aws.juanshen.eu.org
+  server_port: 19409
+  tls:
+    alpn:
+    - h3
+    enabled: true
+    insecure: false
+    server_name: aws.juanshen.eu.org
+  type: tuic
+  udp_over_stream: false
+  udp_relay_mode: native
+  uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+  zero_rtt_handshake: false
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: GLaDOS-B1-01
@@ -1026,23 +1072,6 @@
   tfo: false
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: aws-vmess-gpt
-  network: ws
-  port: 80
-  server: aws-gpt.juanshen.eu.org
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4da7f4bb-64e7-4e9e-d716-7dbbf4263a4e
-  ws-opts:
-    headers:
-      Host: aws-gpt.juanshen.eu.org
-    path: /abcd
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: GLaDOS-B1-01 2
