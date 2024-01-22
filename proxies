@@ -377,39 +377,39 @@ proxies:
     name: aws-vm-argo
     network: ws
     port: 443
-    server: www.wto.org
-    servername: over-particular-hacker-strong.trycloudflare.com
+    server: www.visa.com
+    servername: bears-architecture-carlo-disclose.trycloudflare.com
     skip-cert-verify: true
     tfo: false
     tls: true
     type: vmess
     udp: true
-    uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+    uuid: 592544b1-84be-4f2c-a66e-61173b442610
     ws-opts:
       headers:
-        Host: over-particular-hacker-strong.trycloudflare.com
-      path: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9-vm
+        Host: bears-architecture-carlo-disclose.trycloudflare.com
+      path: 592544b1-84be-4f2c-a66e-61173b442610-vm
 
   - name: aws-reality-vision
     type: vless
     server: 57.180.53.126
-    port: 51899
-    uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+    port: 33233
+    uuid: 592544b1-84be-4f2c-a66e-61173b442610
     network: tcp
     udp: true
     tls: true
     flow: xtls-rprx-vision
     servername: www.yahoo.com
     reality-opts:
-      public-key: pYzWA7QeObgnQIhSklHtrHfdweWHrFitJD-Yq7vcYhY
-      short-id: 1b68f2c7
+      public-key: FxoUqaOhywfOEMO39KNmlrsBQp6GOK-Bc61vszHMFFU
+      short-id: c2658cf7
     client-fingerprint: chrome
 
   - name: aws-vmess-ws
     type: vmess
-    server: 57.180.53.126
-    port: 2087
-    uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+    server: aws.juanshen.eu.org
+    port: 2096
+    uuid: 592544b1-84be-4f2c-a66e-61173b442610
     alterId: 0
     cipher: auto
     udp: true
@@ -417,7 +417,7 @@ proxies:
     network: ws
     servername: aws.juanshen.eu.org
     ws-opts:
-      path: "cbb2787a-7c98-4b9b-bfa0-af66a55c0de9-vm"
+      path: "592544b1-84be-4f2c-a66e-61173b442610-vm"
       headers:
         Host: aws.juanshen.eu.org
 
@@ -425,8 +425,8 @@ proxies:
   - name: aws-hysteria2
     type: hysteria2
     server: aws.juanshen.eu.org
-    port: 3281
-    password: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+    port: 4401
+    password: 592544b1-84be-4f2c-a66e-61173b442610
     alpn:
       - h3
     sni: aws.juanshen.eu.org
@@ -437,8 +437,8 @@ proxies:
     server: aws.juanshen.eu.org
     port: 19409
     type: tuic
-    uuid: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
-    password: cbb2787a-7c98-4b9b-bfa0-af66a55c0de9
+    uuid: 592544b1-84be-4f2c-a66e-61173b442610
+    password: 592544b1-84be-4f2c-a66e-61173b442610
     alpn: [h3]
     disable-sni: true
     reduce-rtt: true
